@@ -782,3 +782,23 @@ h2{
   font-weight: bold;
   cursor: pointer;
 }
+/* ✅ TELEFONDA 2 KOLON GARANTİ */
+@media (max-width: 600px) {
+  .menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .item{
+    width: 48% !important;
+    min-width: 0;
+  }
+
+  .item img{
+    height: 120px;
+    object-fit: cover;
+  }
+}
+
