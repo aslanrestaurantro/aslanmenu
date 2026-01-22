@@ -965,6 +965,15 @@ h2{
     font-size: 13px !important;
   }
 }
+@media (max-width: 768px) {
+  .bottom-bar a[href*="wa.me"],
+  .bottom-bar a[href*="whatsapp"],
+  .bottom-bar .whatsapp,
+  .bottom-bar .btn-whatsapp {
+    display: none !important;
+  }
+}
+
 
 
 
