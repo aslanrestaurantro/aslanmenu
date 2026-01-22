@@ -841,5 +841,41 @@ h2{
     object-fit: cover;
   }
 }
+/* ✅ TELEFONDA HERO DÜZENİ (PC BOZULMAZ) */
+@media (max-width: 768px){
+
+  .hero-overlay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 18px 12px;
+  }
+
+  .hero-left{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .hero-logo{
+    height: 120px;
+    width: 120px;
+    object-fit: contain;
+  }
+
+  .hero-right{
+    width: 100%;
+  }
+
+  .hero-right h1{
+    font-size: 34px;
+  }
+
+  .hero-buttons{
+    justify-content: center;
+  }
+}
 
 
