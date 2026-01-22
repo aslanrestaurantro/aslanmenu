@@ -877,5 +877,62 @@ h2{
     justify-content: center;
   }
 }
+/* ✅ PREMIUM TELEFON HERO DÜZENİ */
+@media (max-width: 768px){
+
+  .hero-overlay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding: 20px 14px;
+    gap: 12px;
+  }
+
+  .hero-left{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-logo{
+    height: 110px;
+    width: 110px;
+    object-fit: contain;
+
+    padding: 10px;
+    border-radius: 999px;
+
+    background: rgba(255,255,255,0.08);
+    border: 2px solid rgba(212,175,55,0.35);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+  }
+
+  .hero-right{
+    width: 100%;
+  }
+
+  .hero-right h1{
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .hero-right p{
+    font-size: 15px;
+    opacity: 0.92;
+  }
+
+  .hero-buttons{
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .btn-hero{
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
+}
 
 
