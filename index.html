@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aslan Restaurant</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="navbar">
+  <div class="logo">
+    <span>Aslan Restaurant</span>
+  </div>
+ <button class="menu-btn" id="menuBtn">☰</button>
+
+  <div class="navlinks" id="navLinks">
+    <a href="#micdejun">Mic dejun</a>
+    <a href="#ciorbe">Ciorbe</a>
+    <a href="#gratare">Gratare</a>
+    <a href="#cuptor">Cuptor</a>
+    <a href="#desert">Desert</a>
+    <a href="#bauturi">Bauturi</a>
+  </div>
+
+  <div class="navbuttons">
+  <a class="btn-map" href="https://www.google.com/maps?api=1&query=Aslan+Restaurant" target="_blank">📍 Hartă</a>
+  <a class="btn-call" href="tel:+40727531094">📞 Sună</a>
+  </div>
+</div>
+<section class="hero">
+  <div class="hero-overlay">
+
+    <div class="hero-left">
+      <img src="logo/logo-sol.jpg" class="hero-logo" alt="Aslan Restaurant Logo">
+    </div>
+
+    <div class="hero-right">
+      <h1>Aslan Restaurant</h1>
+      <p>Bine ați venit! Meniul și comanda sunt aici 😊</p>
+
+      <div class="hero-buttons">
+        <a class="btn-hero primary" href="#micdejun">Vizit meniu</a>
+        <a class="btn-hero whatsapp" href="https://wa.me/40727531094" target="_blank">
+          Comandă pe WhatsApp
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<div class="info-bar">
+  <div class="info-item">📍 Strada Drumul Fermei 111bis, Popești-Leordeni, Ilfov</div>
+  <div class="info-item">⏰ Luni - Duminică: 10:00 - 23:00</div>
+  <div class="info-item">🚚 Livrare + Ridicare</div>
+ <a class="info-item google-link" href="https://maps.app.goo.gl/cWiRzE5E5DNgmJF48" target="_blank">
+  ⭐ 5 / 5 (Google)
+</a>
+
+  <a class="info-btn-whatsapp" href="https://wa.me/40727531094" target="_blank">
+    💬 Comandă acum pe WhatsApp
+  </a>
+</div>
+  <h2>Meniu</h2>
+  <div class="search-box">
+  <input type="text" id="searchInput" placeholder="Caută în meniu... (ex: kebap, ciorbă, ayran)">
+</div>
+
+  <div class="categorii">
+  <a href="#micdejun">Mic dejun</a>
+  <a href="#ciorbe">Ciorbe</a>
+  <a href="#garnituri">Garnituri</a>
+  <a href="#aperitive">Aperitive</a>
+  <a href="#salate">Salate</a>
+  <a href="#gratare">Gratare</a>
+  <a href="#specialitate">Specialitate</a>
+  <a href="#cuptor">Cuptor</a>
+  <a href="#desert">Desert</a>
+  <a href="#bauturi">Bauturi</a>
+</div>
+<h2 id="micdejun">1. Mic dejun</h2>
+<div class="menu">
+  <div class="item">
+    <img src="1.OMLETA SIMPLA.jpg" alt="Omletă simplă">
+    <p>Omletă simplă <span class="price">20 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="2.MENEMEN.jpg" alt="Menemen">
+    <p>Menemen <span class="price">35 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="3.MENEMEN CU CARNE.jpg" alt="Menemen cu carne">
+    <p>Menemen cu carne <span class="price">40 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="4.MIC_DEJUN TURCESC.jpg" alt="Mic dejun turcesc">
+    <p>Mic dejun turcesc <span class="price">60 Lei</span></p>
+  </div>
+
+</div>
+<h2 id="ciorbe">2. Ciorbe</h2>
+
+<div class="menu">
+
+  <div class="item">
+    <img src="2_CIORBE/1.CIORBA_DE_LINTE.jpg" alt="Ciorba de linte">
+    <p>Ciorbă linte <span class="price">25 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="2_CIORBE/2.CIORBA_DE_BURTA.jpg" alt="Ciorba de burta">
+    <p>Ciorbă burtă <span class="price">30 Lei</span> </p>
+  </div>
+
+  <div class="item">
+    <img src="2_CIORBE/3.CIORBA_DE_VACUTA.jpg" alt="Ciorba de vacuta">
+    <p>Ciorbă văcuță <span class="price">30 Lei</span> </p>
+  </div>
+
+  <div class="item">
+    <img src="2_CIORBE/4.CIORBA_SMECHERA.jpg" alt="Ciorba smechera">
+    <p>Ciorbă smecheră <span class="price">35 Lei</span></p>
+  </div>
+</div>
+<h2 id="garnituri">3. Garnituri</h2>
+
+<div class="menu">
+  <div class="item">
+    <img src="3.GARNITURI/1.SMANTANA.jpg" alt="Smantana">
+    <p>Smântână <span class="price">7 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="3.GARNITURI/2.ARDEI MURAT.jpg" alt="Ardei murat">
+    <p>Ardei murat<span class="price">10 Lei</span> </p>
+  </div>
+
+  <div class="item">
+    <img src="3.GARNITURI/3.SOS PICANT.jpg" alt="Sos picant">
+    <p>Sos picant <span class="price">7 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="3.GARNITURI/4.SOS USTUROI.jpg" alt="Sos usturoi">
+    <p>Sos usturoi <span class="price">7 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="3.GARNITURI/5.SALATA DE CEAPA.jpg" alt="Salata de ceapa">
+    <p>Salată de ceapă <span class="price">10 Lei</span></p>
+  </div>
+</div>
+<h2 id="salate">5. Salate</h2>
+
+<div class="menu">
+  <div class="item">
+    <img src="5.SALATE/1.HUMUS.jpg" alt="Humus">
+    <p>Humus <span class="price">22 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="5.SALATE/2.TABBOULEH.jpg" alt="Tabbouleh">
+    <p>Tabbouleh <span class="price">22 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="5.SALATE/3.ZACUSCA PICANTA.jpg" alt="Zacusca picanta">
+    <p>Zacuscă picantă <span class="price">22 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="5.SALATE/4.IAURT CU CASTRAVETI.jpg" alt="Iaurt cu castraveti">
+    <p>Iaurt cu castraveți <span class="price">22 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="5.SALATE/5.SALATA DE VINETE.jpg" alt="Salata de vinete">
+    <p>Salată de vinete <span class="price">22 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="5.SALATE/6.SARMALE.jpg" alt="Sarmale">
+    <p>Sarmale <span class="price">22 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="5.SALATE/7.SALATA CIOBAN.jpg" alt="Salata cioban">
+    <p>Salată cioban <span class="price">22 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="5.SALATE/8.SALATA VARZA ROSIE.jpg" alt="Salata varza rosie">
+    <p>Salată varză roșie <span class="price">22 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="5.SALATE/9.DOVLECEI PRAJITI.jpg" alt="Dovlecei prajiti">
+    <p>Dovlecei prăjiți <span class="price">22 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="5.SALATE/10.LABNE.jpg" alt="Labne">
+    <p>Labne <span class="price">22 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="5.SALATE/11.MURATURI MIXT.jpg" alt="Muraturi mixt">
+    <p>Murături mixte <span class="price">20 Lei</span></p>
+  </div>
+</div>
+<h2 id="aperitive">4. Aperitive calde</h2>
+
+<div class="menu">
+  <div class="item">
+    <img src="4.APERITIVE CALDE/1.BULGUR.jpg" alt="Bulgur">
+    <p>Bulgur <span class="price">15 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="4.APERITIVE CALDE/2.OREZ.jpg" alt="Orez">
+    <p>Orez <span class="price">15 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="4.APERITIVE CALDE/4.CARTOFI PRAJITI.jpg" alt="Cartofi prajiti">
+    <p>Cartofi prăjiți <span class="price">10 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="4.APERITIVE CALDE/5.FALAFEL.jpg" alt="Falafel">
+    <p>Falafel <span class="price">30 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="4.APERITIVE CALDE/6.SIGARA BOREGI.jpg" alt="Sigara boregi">
+    <p>Sigara böreği <span class="price">20 Lei</span></p>
+  </div>
+</div>
+<h2 id="gratare">6. Gratare turcesti</h2>
+
+<div class="menu">
+  <div class="item">
+    <img src="6.GRATARE TURCESTI/1.KEBAP SIMPLU.jpg" alt="Kebap simplu">
+    <p>Kebap simplu <span class="price">60 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="6.GRATARE TURCESTI/2.ADANA KEBAP.jpg" alt="Adana kebap">
+    <p>Adana kebap <span class="price">60 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="6.GRATARE TURCESTI/3.KEBAP CU USTUROI.jpg" alt="Kebap cu usturoi">
+    <p>Kebap cu usturoi <span class="price">60 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="6.GRATARE TURCESTI/4.KEBAP CU ROSII.jpg" alt="Kebap cu rosii">
+    <p>Kebap cu roșii <span class="price">65 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="6.GRATARE TURCESTI/5.SARMA BEYTI.jpg" alt="Sarma Beyti">
+    <p>Sarma Beyti <span class="price">75 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="6.GRATARE TURCESTI/6.LEGUME LA GRATAR.jpg" alt="Legume la gratar">
+    <p>Legume la grătar <span class="price">45 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="6.GRATARE TURCESTI/7.MIXT GRILL.jpg" alt="Mixt grill">
+    <p>Mixt grill <span class="price">110 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="6.GRATARE TURCESTI/8.FRIGARUI DE BERBEC.jpg" alt="Frigarui de berbec">
+    <p>Frigărui de berbec <span class="price">70 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="6.GRATARE TURCESTI/9.KEBAP DE MIEL.jpg" alt="Kebap de miel">
+    <p>Kebap de miel <span class="price">70 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="6.GRATARE TURCESTI/10.COTLETE DE BERBECUT.jpg" alt="Cotlete de berbecut">
+    <p>Cotlete de berbecuț <span class="price">100 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="6.GRATARE TURCESTI/11.FRIGARUI DE PUI.jpg" alt="Frigarui de pui">
+    <p>Frigărui de pui <span class="price">55 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="6.GRATARE TURCESTI/12.ARIPIOARE DE PUI.jpg" alt="Aripioare de pui">
+    <p>Aripioare de pui <span class="price">55 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="6.GRATARE TURCESTI/13.PULPE DE PUI DEZOSATE.jpg" alt="Pulpe de pui dezosate">
+    <p>Pulpe de pui dezosate <span class="price">55 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="6.GRATARE TURCESTI/14.FRIGARUI DE VITA.jpg" alt="Frigarui de vita">
+    <p>Frigărui de vită <span class="price">70 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="6.GRATARE TURCESTI/15.ALI NAZIK.jpg" alt="Ali Nazik">
+    <p>Ali Nazik <span class="price">75 Lei</span></p>
+  </div>
+</div>
+<h2 id="specialitate">7. Specialitatea bucatarului</h2>
+
+<div class="menu">
+  <div class="item">
+    <img src="7.SPECIALITATEA BUCATARULUI/1.SAC KAVURMA PUI.webp" alt="Sac kavurma pui">
+    <p>Sac kavurma pui <span class="price">65 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="7.SPECIALITATEA BUCATARULUI/2.SAC KAVURMA VITA.webp" alt="Sac kavurma vita">
+    <p>Sac kavurma vită <span class="price">70 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="7.SPECIALITATEA BUCATARULUI/3.SPECIALITATEA BUCATARULUI.jpg" alt="Specialitatea bucatarului">
+    <p>Specialitatea bucătarului <span class="price">65 Lei</span></p>
+  </div>
+</div>
+<h2 id="cuptor">8. Cuptor</h2>
+
+<div class="menu">
+  <div class="item">
+    <img src="8.CUPTOR/1.PIDE CU CASCAVAL.jpg" alt="Pide cu cascaval">
+    <p>Pide cu cașcaval <span class="price">42 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="8.CUPTOR/2.PIDE CU CASCAVAL SI GHIUDEM.jpg" alt="Pide cu cascaval si ghiudem">
+    <p>Pide cu cașcaval și ghiudem <span class="price">45 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="8.CUPTOR/3.PIDE CU VITA.jpg" alt="Pide cu vita">
+    <p>Pide cu vită <span class="price">50 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="8.CUPTOR/4.PIDE CU VITA LEGUME SI CASCAVAL.jpg" alt="Pide cu vita legume si cascaval">
+    <p>Pide cu vită, legume și cașcaval <span class="price">55 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="8.CUPTOR/5.PIDE MIXT.jpg" alt="Pide mixt">
+    <p>Pide mixt <span class="price">58 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="8.CUPTOR/6.LAHMACUN.jpg" alt="Lahmacun">
+    <p>Lahmacun <span class="price">25 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="8.CUPTOR/7.FINDIK LAHMACUN.jpg" alt="Findik lahmacun">
+    <p>Fındık lahmacun <span class="price">12 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="8.CUPTOR/8.LAVAS.jpg" alt="Lavas">
+    <p>Lavaș <span class="price">4 Lei</span></p>
+  </div>
+</div>
+<h2 id="desert">9. Desert</h2>
+
+<div class="menu">
+  <div class="item">
+    <img src="9.DESERT/1.BAKLAVA.jpg" alt="Baklava">
+    <p>Baklava <span class="price">28 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="9.DESERT/2.CREMA DE ZAHAR ARS.jpg" alt="Crema de zahar ars">
+    <p>Crema de zahăr ars <span class="price">25 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="9.DESERT/3.FOIETAJ CU LAPTE-GULLAC.jpg" alt="Foietaj cu lapte Gullac">
+    <p>Foietaj cu lapte (Güllaç) <span class="price">25 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="9.DESERT/4.OREZ CU LAPTE.jpg" alt="Orez cu lapte">
+    <p>Orez cu lapte <span class="price">25 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="9.DESERT/5.KUNEFE.jpg" alt="Kunefee">
+    <p>Künefe <span class="price">30 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="9.DESERT/6.KATMER.jpg" alt="Katmer">
+    <p>Katmer <span class="price">30 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="9.DESERT/7.TRALICE CU VISINE.jpg" alt="Tralice cu visine">
+    <p>Tralice cu vișine <span class="price">30 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="9.DESERT/8.TRALICE CU CARAMEL.jpg" alt="Tralice cu caramel">
+    <p>Tralice cu caramel <span class="price">30 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="9.DESERT/9.BAKLAVA CU LAPTE.jpg" alt="Baklava cu lapte">
+    <p>Baklava cu lapte <span class="price">30 Lei</span></p>
+  </div>
+</div>
+<h2 id="bauturi">10. Bauturi racoritoare</h2>
+
+
+<div class="menu">
+  <div class="item">
+    <img src="10.BAUTURI RACORITOARE/1.APA PLATA.jpg" alt="Apa plata">
+    <p>Apă plată <span class="price">12 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="10.BAUTURI RACORITOARE/2.APA MINERALA.jpg" alt="Apa minerala">
+    <p>Apă minerală <span class="price">12 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="10.BAUTURI RACORITOARE/3.PEPSI.jpg" alt="Pepsi">
+    <p>Pepsi <span class="price">13 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="10.BAUTURI RACORITOARE/4.PEPSI MAX.webp" alt="Pepsi Max">
+    <p>Pepsi Max <span class="price">13 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="10.BAUTURI RACORITOARE/5.MIRINDA.webp" alt="Mirinda">
+    <p>Mirinda <span class="price">13 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="10.BAUTURI RACORITOARE/6.7UP.png" alt="7UP">
+    <p>7UP <span class="price">13 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="10.BAUTURI RACORITOARE/7.GAZOZ SIMPLU.webp" alt="Gazoz simplu">
+    <p>Gazoz simplu <span class="price">13 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="10.BAUTURI RACORITOARE/8.GAZOZ PORTOCALE.png" alt="Gazoz portocale">
+    <p>Gazoz portocale <span class="price">13 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="10.BAUTURI RACORITOARE/9.LIMONADA ULUDAG.webp" alt="Limonada Uludag">
+    <p>Limonadă Uludağ <span class="price">13 Lei</span></p>
+  </div>
+
+  <div class="item">
+    <img src="10.BAUTURI RACORITOARE/10.AYRAN.jpg" alt="Ayran">
+    <p>Ayran <span class="price">13 Lei</span></p>
+  </div>
+</div>
+
+  <a class="whatsapp" href="https://wa.me/40727531094" target="_blank">
+  Comandă pe WhatsApp 📲
+</a>
+<script>
+  /* SEARCH */
+  const searchInput = document.getElementById("searchInput");
+
+  if(searchInput){
+    searchInput.addEventListener("keyup", function () {
+      const value = searchInput.value.toLowerCase();
+      const items = document.querySelectorAll(".item");
+
+      items.forEach((item) => {
+        const text = item.innerText.toLowerCase();
+        if (text.includes(value)) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+  }
+
+  /* MOBILE MENU */
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+if (menuBtn && navLinks) {
+  menuBtn.addEventListener("click", function () {
+    navLinks.classList.toggle("show");
+  });
+
+  document.querySelectorAll("#navLinks a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("show");
+    });
+  });
+}
+</script>
+<script>
+  // ✅ Hamburger Menü Aç / Kapat
+  const menuBtn = document.getElementById("menuBtn");
+  const navLinks = document.getElementById("navLinks");
+
+  if (menuBtn && navLinks) {
+    menuBtn.addEventListener("click", function () {
+      navLinks.classList.toggle("show");
+    });
+
+    document.querySelectorAll("#navLinks a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("show");
+      });
+    });
+  }
+
+  // ✅ Arama (yazınca otomatik filtreleme)
+  const searchInput = document.getElementById("searchInput");
+
+  if (searchInput) {
+    searchInput.addEventListener("keyup", function () {
+      const value = searchInput.value.toLowerCase().trim();
+      const items = document.querySelectorAll(".item");
+if (value.length < 2) {
+  items.forEach((item) => {
+  item.style.display = "";
+});
+
+      items.forEach((item) => {
+        const text = item.textContent.toLowerCase();
+
+        if (text.includes(value)) {
+          item.style.display = "";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+  }
+</script>
+<script>
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("modalImg");
+  const closeBtn = document.querySelector(".close");
+
+  // sayfadaki tüm yemek resimlerini seç
+  document.querySelectorAll("img").forEach(img => {
+    img.style.cursor = "pointer";
+
+    img.addEventListener("click", () => {
+     modal.classList.add("active"); 
+      modalImg.src = img.src;
+    });
+  });
+
+  // kapatma
+  closeBtn.addEventListener("click", () => {
+  modal.classList.remove("active");
+});
+
+  // dışarı tıklayınca kapansın
+  modal.addEventListener("click", (e) => {
+    if(e.target === modal){
+      modal.classList.remove("active");
+    }
+  });
+</script>
+
+<!-- Modal -->
+<div id="imgModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+</body>
+</html>

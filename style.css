@@ -1,0 +1,784 @@
+body{
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #134f19;
+  padding: 30px;
+}
+
+h1{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+p{
+  font-size: 18px;
+}
+
+button{
+  background: #e63946;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover{
+  opacity: 0.85;
+}
+.whatsapp{
+  display: inline-block;
+  background: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.whatsapp:hover{
+  opacity: 0.85;
+}
+img{
+  margin: 10px;
+  border-radius: 10px;
+}
+.menu{
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.item{
+  width: 200px;
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.item img{
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.item p{
+  margin: 10px 0 0;
+  font-weight: bold;
+}
+.menu .item img{
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.categorii{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.categorii a{
+  background: white;
+  padding: 8px 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.categorii a:hover{
+  background: #f1f1f1;
+}
+.whatsapp{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  z-index: 9999;
+}
+.whatsapp:hover{
+  background: #1ebe5d;
+}
+@media (max-width: 600px){
+  .whatsapp{
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 14px;
+    font-size: 14px;
+    border-radius: 12px;
+  }
+}
+
+body{
+  background: linear-gradient(135deg, #f6f7fb, #e9eef7) !important;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f6f7fb, #e9eef7);
+}
+
+
+.hero-text h2{
+  margin: 0;
+  font-size: 22px;
+}
+
+.hero-text p{
+  margin: 6px 0 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* MENU KARTLARI DAHA PREMIUM */
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.item{
+  background: rgba(255,255,255,0.92);
+  border-radius: 18px;
+  padding: 14px;
+  width: 180px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+.item:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+}
+
+.item img{
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+h2{
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #252824;
+}
+@media (max-width: 600px){
+  .item{
+    width: 45%;
+  }
+
+  .hero{
+    height: 180px;
+  }
+}
+/* NAVBAR */
+.navbar{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: rgba(199, 38, 38, 0.85);
+  color: rgb(11, 6, 0);
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  backdrop-filter: blur(8px);
+}
+
+.navbar .logo{
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.navlinks{
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.navlinks a{
+  color: rgb(17, 17, 17);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.navlinks a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.navbuttons{
+  display: flex;
+  gap: 10px;
+}
+
+.btn-map, .btn-call{
+  padding: 8px 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 13px;
+  color: rgb(16, 16, 16);
+}
+
+.btn-map{
+  background: #ff9800;
+}
+
+.btn-call{
+  background: #2196f3;
+}
+
+/* SEARCH */
+.search-box{
+  margin: 15px 0 25px 0;
+}
+
+.search-box input{
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
+@media (max-width: 700px){
+  .navlinks{
+    display: none;
+  }
+
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbuttons{
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+.menu-btn{
+  display:none;
+  background:none;
+  border:none;
+  font-size:28px;
+  cursor:pointer;
+}
+
+@media (max-width: 768px){
+  .menu-btn{
+    display:block;
+  }
+
+  .navlinks{
+    display:none;
+    flex-direction:column;
+    gap:10px;
+    width:100%;
+    padding:10px 0;
+  }
+
+  .navlinks.show{
+    display:flex;
+  }
+}
+/* === PREMIUM MENU KARTLARI === */
+.menu-item {
+  background: rgba(255,255,255,0.90);
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+  transition: 0.25s ease;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.menu-item:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 16px 35px rgba(0,0,0,0.14);
+}
+
+.menu-item img{
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.menu-item h4,
+.menu-item h3{
+  margin: 10px 0 0 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+}
+.price{
+  display:inline-block;
+  margin-top: 8px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: #8B1E1E;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+}
+.menu-item{
+  transition: 0.25s ease;
+}
+
+.menu-item:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+}
+.menu-item img{
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+.menu-item h4{
+  font-size: 14px;
+  font-weight: 600;
+  margin: 10px 0 6px;
+  color: #222;
+}
+/* === PREMIUM HERO === */
+.hero{
+  width: 100%;
+  height: 420px;
+  border-radius: 18px;
+  margin: 15px 25px;
+  overflow: hidden;
+  position: relative;
+
+  background: radial-gradient(circle at top left, rgba(255,180,80,0.30), transparent 55%),
+ radial-gradient(circle at bottom right, rgba(160,60,40,0.35), transparent 55%),
+ linear-gradient(135deg, #1b0f0a, #2a1410);
+
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+.hero-overlay{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+gap: 40px;
+justify-content: flex-start;
+  padding: 40px;
+  background: linear-gradient(
+    90deg,
+    rgba(0,0,0,0.65),
+    rgba(0,0,0,0.20)
+  );
+  color: white;
+}
+
+.hero-overlay h1{
+  font-size: 50px;
+  margin: 0;
+  font-weight: 800;
+}
+
+.hero-overlay p{
+  margin-top: 10px;
+  font-size: 18px;
+  opacity: 0.92;
+}
+
+.hero-buttons{
+  margin-top: 22px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-hero{
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: 0.25s;
+  display: inline-block;
+}
+
+.btn-hero.primary{
+  background: #D4AF37;
+  color: #111;
+}
+
+.btn-hero.primary:hover{
+  transform: translateY(-2px);
+}
+
+.btn-hero.whatsapp{
+  background: #25d366;
+  color: white;
+}
+
+.btn-hero.whatsapp:hover{
+  transform: translateY(-2px);
+}
+.hero-logo{
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+
+  border-radius: 999px;
+  padding: 14px;
+
+  background: rgba(255,255,255,0.06);
+  border: 2px solid rgba(212,175,55,0.55);
+
+  box-shadow: 0 14px 40px rgba(0,0,0,0.50);
+}
+.hero-overlay h1{
+  font-size: 52px;
+  letter-spacing: 1px;
+  text-shadow: 0 6px 18px rgba(0,0,0,0.55);
+}
+.hero-overlay p{
+  opacity: 0.92;
+  font-size: 18px;
+}
+.btn-hero{
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+.btn-hero:hover{
+  transform: translateY(-2px);
+}
+/* === PREMIUM MENU AREA === */
+body{
+  background: #f4f4f4;
+}
+
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+/* Menü Kartları */
+.item{
+  background: rgba(255,255,255,0.92);
+  border-radius: 18px;
+  padding: 14px;
+  width: 180px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.10);
+  transition: 0.25s ease;
+  text-align: center;
+}
+
+/* Hover premium efekti */
+.item:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+}
+
+/* Resimler */
+.item img{
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+/* Fiyat badge */
+.price{
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #881E1E;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+}
+h2{
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #7a1f1f;
+  font-weight: 800;
+}
+/* ===== PREMIUM INFO BAR ===== */
+.info-bar{
+  margin: 15px 25px;
+  padding: 14px 16px;
+  border-radius: 18px;
+
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255,255,255,0.35);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  transition: 0.25s ease;
+}
+
+.info-bar:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.16);
+}
+
+/* Itemler */
+.info-item{
+  font-size: 13px;
+  font-weight: 800;
+  color: #1f1f1f;
+
+  padding: 9px 14px;
+  border-radius: 999px;
+
+  background: rgba(255,255,255,0.75);
+  border: 1px solid rgba(0,0,0,0.06);
+
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+
+  transition: 0.25s ease;
+}
+
+.info-item:hover{
+  transform: translateY(-2px);
+}
+
+/* WhatsApp Premium */
+.info-btn-whatsapp{
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 900;
+
+  padding: 11px 16px;
+  border-radius: 999px;
+
+  background: linear-gradient(135deg, #25d366, #1ebe5d);
+  color: white;
+
+  box-shadow: 0 12px 25px rgba(37,211,102,0.35);
+  transition: 0.25s ease;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info-btn-whatsapp:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 18px 35px rgba(37,211,102,0.45);
+  filter: brightness(1.05);
+}
+
+/* Mobil uyum */
+@media (max-width: 768px){
+  .info-bar{
+    margin: 12px 12px;
+    padding: 12px;
+    justify-content: center;
+  }
+
+  .info-item{
+    width: 100%;
+    text-align: center;
+  }
+
+  .info-btn-whatsapp{
+    width: 100%;
+    justify-content: center;
+  }
+}
+/* ===== PREMIUM MENU CARDS ===== */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding: 10px 25px;
+}
+
+.item {
+  width: 220px;
+  background: rgba(255,255,255,0.92);
+  border-radius: 18px;
+  padding: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.10);
+  text-align: center;
+  position: relative;
+  transition: 0.25s ease;
+  border: 1px solid rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+.item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+.item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: 0.25s ease;
+}
+
+.item:hover img {
+  transform: scale(1.05);
+}
+
+.item h4 {
+  margin: 10px 0 6px;
+  font-size: 15px;
+  font-weight: 800;
+  color: #222;
+}
+
+.price {
+  display: inline-block;
+  background: linear-gradient(135deg, #b10f0a, #ff4b2b);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+  margin-top: 6px;
+  box-shadow: 0 8px 18px rgba(177,15,10,0.25);
+}
+
+/* Mobil uyum */
+@media(max-width: 768px){
+  .menu{
+    justify-content: center;
+    padding: 10px 12px;
+  }
+  .item{
+    width: 46%;
+    min-width: 160px;
+  }
+}
+.item p{
+  margin: 10px 0 6px;
+  font-size: 15px;
+  font-weight: 800;
+  color: #222;
+}
+.navbuttons{
+  position: relative;
+  z-index: 9999;
+}
+
+.btn-map, .btn-call{
+  position: relative;
+  z-index: 9999;
+}
+.google-link{
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.google-link:hover{
+  text-decoration: underline;
+}
+/* Modal arka plan */
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.75);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal içindeki resim */
+.modal-content{
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 18px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+/* Kapatma X */
+.close{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 999999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.75);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.active{
+  display: flex;
+}
+
+.modal-content{
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 18px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+.close{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
