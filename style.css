@@ -802,5 +802,26 @@ h2{
     object-fit: cover;
   }
 }
+/* ✅ TELEFONDA 2 KOLON GARANTİ */
+@media (max-width: 600px) {
+  .menu{
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .item,
+  .menu-item{
+    width: 48% !important;
+    min-width: 0 !important;
+  }
+
+  .item img,
+  .menu-item img{
+    height: 120px !important;
+    object-fit: cover;
+  }
+}
 
 
