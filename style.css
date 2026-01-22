@@ -973,6 +973,13 @@ h2{
     display: none !important;
   }
 }
+@media (max-width: 768px) {
+  a[href*="wa.me"],
+  a[href*="whatsapp"]{
+    display: none !important;
+  }
+}
+
 
 
 
