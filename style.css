@@ -823,5 +823,23 @@ h2{
     object-fit: cover;
   }
 }
+/* ✅ TELEFONDA 2 KOLON (GARANTİ GRID) */
+@media (max-width: 600px) {
+  .menu{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .item{
+    width: 100% !important;
+  }
+
+  .item img{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+}
 
 
