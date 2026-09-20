@@ -1,0 +1,59 @@
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 22px;
+  border-radius: var(--radius-button);
+  border: 1px solid transparent;
+  font-family: var(--font-body);
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: var(--color-gold);
+  color: var(--color-black);
+}
+
+.btn-primary:hover {
+  background: var(--color-gold-light);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-gold-light);
+  border-color: var(--color-gold);
+}
+
+.btn-secondary:hover {
+  background: var(--color-dark-gold);
+}
+
+/* Cards */
+.card {
+  background: var(--color-charcoal);
+  border: 1px solid rgba(201, 162, 39, 0.18);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+
+/* Section title */
+.section-title {
+  font-family: var(--font-heading);
+  color: var(--color-gold-light);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.1;
+}
+
+/* Container */
+.container {
+  width: min(1120px, calc(100% - 32px));
+  margin-inline: auto;
+}
