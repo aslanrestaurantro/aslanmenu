@@ -1,0 +1,721 @@
+{
+  "language": "ro",
+  "restaurant": "Aslan Restaurant",
+  "currency": "Lei",
+  "categories": [
+    {
+      "id": "mic-dejun",
+      "name": "Mic Dejun",
+      "items": [
+        {
+          "name": "Omletă Simplă",
+          "weight": "250 g",
+          "price": 25,
+          "description": "3 ouă, ulei, servite alături de roșii și castraveți."
+        },
+        {
+          "name": "Menemen",
+          "weight": "300 g",
+          "price": 30,
+          "description": "Ouă gătite la tigaie cu roșii zemoase, ceapă, cașcaval, ardei gras verde și ulei, asezonate cu sare."
+        },
+        {
+          "name": "Menemen cu Carne",
+          "weight": "350 g",
+          "price": 45,
+          "description": "Ouă gătite la tigaie cu carne tocată, ceapă, roșii zemoase, ardei gras verde și ulei, asezonate cu sare."
+        },
+        {
+          "name": "Mic Dejun Turcesc",
+          "weight": "350 g",
+          "price": 60,
+          "description": "Platou mic dejun cu omletă sau ochiuri la alegere, brânză telemea, cașcaval, unt, miere, măsline, roșii proaspete, castraveți și ardei verde."
+        }
+      ]
+    },
+    {
+      "id": "ciorbe",
+      "name": "Ciorbe",
+      "items": [
+        {
+          "name": "Supă de Linte",
+          "weight": "350 g",
+          "price": 25,
+          "description": "Supă fină din linte roșie, cartof, ceapă, ulei și condimente. Servită cu lămâie și ardei iute murat."
+        },
+        {
+          "name": "Ciorbă de Burtă",
+          "weight": "350 g",
+          "price": 30,
+          "description": "Ciorbă din burtă de vită, smântână, ou, ceapă, usturoi, ulei și condimente. Servită cu lămâie și ardei iute murat."
+        },
+        {
+          "name": "Ciorbă de Văcuță",
+          "weight": "350 g",
+          "price": 30,
+          "description": "Ciorbă din carne de vită, morcov, cartof, ceapă, vinete, ardei gras, pastă de tomate, ulei și condimente. Servită cu lămâie și ardei iute murat."
+        },
+        {
+          "name": "Ciorbă Șmecheră",
+          "weight": "400 g",
+          "price": 35,
+          "description": "Ciorbă mixtă din amestec de ciorbă de burtă și ciorbă de oaie, picantă și cu usturoi. Servită cu lămâie și ardei iute murat."
+        },
+        {
+          "name": "Ciorbă de Oaie",
+          "weight": "350 g",
+          "price": 30,
+          "description": "Ciorbă din carne de oaie, ardei gras, ulei și condimente. Servită cu lămâie și ardei iute murat."
+        }
+      ]
+    },
+    {
+      "id": "aperitive-calde",
+      "name": "Aperitive Calde",
+      "items": [
+        {
+          "name": "Falafel",
+          "weight": "400 g",
+          "price": 40,
+          "description": "Falafel crocant, servit cu bulgur, orez, cartofi prăjiți, ceapă cu sumac, salată de varză roșie și sos de usturoi."
+        },
+        {
+          "name": "Humus cu Carne",
+          "weight": "250 g",
+          "price": 35,
+          "description": "Humus din năut, tahini, ulei de măsline și lămâie, servit cald cu bucăți fragede din carne de vită, unt și condimente."
+        },
+        {
+          "name": "Camembert Pane",
+          "weight": "150 g",
+          "price": 25,
+          "description": "Brânză Camembert cremoasă, trasă în crustă crocantă de pesmet."
+        },
+        {
+          "name": "Inele de Ceapă",
+          "weight": "150 g",
+          "price": 20,
+          "description": ""
+        },
+        {
+          "name": "Sigara Börek",
+          "weight": "200 g",
+          "price": 25,
+          "description": "Foi fine de plăcintă umplute cu cașcaval."
+        }
+      ]
+    },
+    {
+      "id": "garnituri-sosuri",
+      "name": "Garnituri & Sosuri",
+      "items": [
+        {
+          "name": "Bulgur",
+          "weight": "250 g",
+          "price": 15,
+          "description": ""
+        },
+        {
+          "name": "Orez Pilav",
+          "weight": "250 g",
+          "price": 15,
+          "description": ""
+        },
+        {
+          "name": "Cartofi Prăjiți cu Brânză",
+          "weight": "250 g",
+          "price": 18,
+          "description": ""
+        },
+        {
+          "name": "Cartofi Prăjiți",
+          "weight": "200 g",
+          "price": 15,
+          "description": ""
+        },
+        {
+          "name": "Ceapă cu Sumac",
+          "weight": "100 g",
+          "price": 10,
+          "description": ""
+        },
+        {
+          "name": "Murături Mix",
+          "weight": "150 g",
+          "price": 15,
+          "description": ""
+        },
+        {
+          "name": "Ardei Iute Murat",
+          "weight": "100 g",
+          "price": 12,
+          "description": ""
+        },
+        {
+          "name": "Varză Roșie",
+          "weight": "150 g",
+          "price": 12,
+          "description": ""
+        },
+        {
+          "name": "Sos de Usturoi",
+          "weight": "",
+          "price": 7,
+          "description": ""
+        },
+        {
+          "name": "Sos Iute",
+          "weight": "",
+          "price": 7,
+          "description": ""
+        },
+        {
+          "name": "Smântână",
+          "weight": "",
+          "price": 7,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "salate",
+      "name": "Salate",
+      "items": [
+        {
+          "name": "Tarator",
+          "weight": "200 g",
+          "price": 25,
+          "description": "Dovlecei, morcovi, iaurt, maioneză, usturoi, ulei de măsline, mărar, sare."
+        },
+        {
+          "name": "Tzatziki",
+          "weight": "200 g",
+          "price": 25,
+          "description": "Iaurt, castraveți, usturoi, mărar, ulei de măsline, sare."
+        },
+        {
+          "name": "Humus",
+          "weight": "200 g",
+          "price": 25,
+          "description": "Năut, pastă de susan, usturoi, ulei de măsline, chimion, sare."
+        },
+        {
+          "name": "Salată de Vinete",
+          "weight": "200 g",
+          "price": 25,
+          "description": "Vinete, ardei capia, pătrunjel, usturoi, ulei de măsline."
+        },
+        {
+          "name": "Salată Ciobănească",
+          "weight": "200 g",
+          "price": 25,
+          "description": "Roșii, castraveți, ardei verzi, ceapă roșie, pătrunjel, ulei de măsline, lămâie, sos de rodie."
+        },
+        {
+          "name": "Salată de Măsline",
+          "weight": "200 g",
+          "price": 28,
+          "description": "Măsline verzi și negre, roșii, castraveți, nucă, rodie, pătrunjel, ulei de măsline, sos de rodie."
+        },
+        {
+          "name": "Salată cu Brânză",
+          "weight": "200 g",
+          "price": 28,
+          "description": "Roșii, castraveți, ceapă roșie, măsline, pătrunjel, ulei de măsline, oregano, brânză telemea."
+        },
+        {
+          "name": "Tabouleh",
+          "weight": "200 g",
+          "price": 25,
+          "description": "Roșii, ardei capia, pătrunjel, rodie, ulei de măsline, sos de rodie."
+        },
+        {
+          "name": "Mutabal",
+          "weight": "200 g",
+          "price": 28,
+          "description": "Vinete, pastă de susan, cremă de iaurt, usturoi, ulei de măsline, nucă."
+        },
+        {
+          "name": "Zacuscă Picantă",
+          "weight": "200 g",
+          "price": 25,
+          "description": "Roșii, castraveți, ardei, pătrunjel, ulei de măsline, sos de rodie, ceapă."
+        },
+        {
+          "name": "Cremă de Iaurt",
+          "weight": "200 g",
+          "price": 25,
+          "description": ""
+        },
+        {
+          "name": "Ordövr Salata",
+          "weight": "500 g",
+          "price": 70,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "gratare-turcesti",
+      "name": "Grătare Turcești",
+      "items": [
+        {
+          "name": "Adana Kebab / Kebab Picant",
+          "weight": "400 g",
+          "price": 65,
+          "description": "Kebab tradițional tocat manual la satâr din carne de berbecuț și vită, frământat cu sare, fulgi de ardei iute roșu și ardei kapia roșu, fript la grătar cu cărbuni."
+        },
+        {
+          "name": "Urfa Kebab / Kebab Simplu",
+          "weight": "400 g",
+          "price": 65,
+          "description": "Kebab tradițional tocat manual la satâr din carne de berbecuț și vită, frământat doar cu sare, fript la grătar cu cărbuni."
+        },
+        {
+          "name": "Frigărui de Berbec / Cop Șiş",
+          "weight": "400 g",
+          "price": 75,
+          "description": "Bucățele fragede de carne, condimentate cu sare, boia de ardei dulce și oregano aromat, rumenite rapid pe țepușe la grătarul cu cărbuni."
+        },
+        {
+          "name": "Kebab de Miel / Hashas Kebab",
+          "weight": "400 g",
+          "price": 70,
+          "description": "Kebab tradițional tocat manual la satâr din carne de miel, frământat doar cu sare, fript la grătar cu cărbuni."
+        },
+        {
+          "name": "Frigărui de Vită / Dana Şiş",
+          "weight": "400 g",
+          "price": 70,
+          "description": "Bucățele fragede de carne, condimentate cu sare, boia de ardei dulce și oregano aromat, rumenite rapid pe țepușe la grătarul cu cărbuni."
+        },
+        {
+          "name": "Beyti Kebab / Kebab cu Usturoi",
+          "weight": "400 g",
+          "price": 65,
+          "description": "Kebab tradițional tocat manual la satâr din carne de berbecuț și vită, condimentat cu usturoi, pătrunjel proaspăt și sare, fript la grătar cu cărbuni."
+        },
+        {
+          "name": "Karisik Kebab / Mixt Grill",
+          "weight": "650 g",
+          "price": 120,
+          "description": "Platou mixt cu frigărui de vită, frigărui de pui, kebab, cotlet de berbecuț și mini-lahmacun."
+        },
+        {
+          "name": "Domatesli Kebab / Kebab cu Roșii",
+          "weight": "450 g",
+          "price": 70,
+          "description": "Kebab tradițional din carne de berbecuț și vită tocate la satâr, așezat pe țepușă alternativ cu felii mari de roșii zemoase și fript la grătar cu cărbuni."
+        }
+      ]
+    },
+    {
+      "id": "gratare-pui",
+      "name": "Grătare de Pui",
+      "items": [
+        {
+          "name": "File de Pui",
+          "weight": "450 g",
+          "price": 60,
+          "description": "File din piept de pui marinate în bait (pastă de ardei, ulei, condimente speciale), fript pe jar."
+        },
+        {
+          "name": "Frigărui de Pui / Tavuk Şiş",
+          "weight": "450 g",
+          "price": 60,
+          "description": "Frigărui de pui marinate în bait (pastă de ardei, sare, ulei, condimente speciale), fripte pe jar."
+        },
+        {
+          "name": "Pulpe Superioare de Pui",
+          "weight": "450 g",
+          "price": 60,
+          "description": "Pulpe superioare de pui marinate în bait (pastă de ardei, usturoi, ulei, condimente speciale), fripte pe jar."
+        },
+        {
+          "name": "Kebab de Pui / Tavuk Kebab",
+          "weight": "450 g",
+          "price": 60,
+          "description": "Kebab de pui tocat manual la satâr (suculent, cu un strop de grăsime de berbecuț) și sare, fript pe jar."
+        },
+        {
+          "name": "Pulpe de Pui Dezosate / Tavuk Biftek",
+          "weight": "450 g",
+          "price": 60,
+          "description": "Pulpe de pui dezosate marinate în bait (pastă de ardei, ulei, condimente speciale), friptă pe jar."
+        },
+        {
+          "name": "Aripioare de Pui / Kanat",
+          "weight": "450 g",
+          "price": 60,
+          "description": "Aripioare de pui marinate în bait (pastă de ardei, ulei, condimente speciale), fripte pe jar."
+        }
+      ]
+    },
+    {
+      "id": "specialitatea-bucatarului",
+      "name": "Specialitatea Bucătarului",
+      "items": [
+        {
+          "name": "Sac Kavurma Vită",
+          "weight": "400 g",
+          "price": 75,
+          "description": "Cubulețe din carne de vită brezate cu roșii, ceapă, ardei roșu și verde, pastă de tomate, ulei, sare, oregano, cu garnitură de orez."
+        },
+        {
+          "name": "Sac Kavurma Pui",
+          "weight": "400 g",
+          "price": 70,
+          "description": "Cubulețe din carne de piept de pui brezate cu roșii, ceapă, ardei roșu și verde, pastă de tomate, ulei, sare, oregano, cu garnitură de orez."
+        },
+        {
+          "name": "Sac Kavurma Miel",
+          "weight": "400 g",
+          "price": 80,
+          "description": "Cubulețe din carne de miel brezate cu roșii, ceapă, ardei roșu și verde, pastă de tomate, ulei, sare, oregano, cu garnitură de orez."
+        },
+        {
+          "name": "Sarma Beyti",
+          "weight": "450 g",
+          "price": 75,
+          "description": "Kebab din carne de vită și oaie, înfășurat în lipie turcească cu cașcaval cheddar, servit cu sos de usturoi, roșii și cartofi prăjiți."
+        },
+        {
+          "name": "Ali Nazik",
+          "weight": "450 g",
+          "price": 75,
+          "description": "Specialitate turcească din carne de vită servită pe pat de vinete coapte, iaurt, usturoi și roșii."
+        },
+        {
+          "name": "Sarma Beyti cu Pui",
+          "weight": "450 g",
+          "price": 70,
+          "description": "Kebab din pui, înfășurat în lipie turcească cu cașcaval cheddar, servit cu sos de usturoi, roșii și cartofi prăjiți."
+        },
+        {
+          "name": "Platou Premium cu Pui, Paste și Salată Ciobănească",
+          "weight": "450 g",
+          "price": 65,
+          "description": "Cubulețe fragede din piept de pui, marinate în sos aromat de mirodenii și trase la tigaie, însoțite de paste penne cu unt și ierburi aromatice, alături de o salată proaspătă Çoban (roșii, castraveți, ardei și ceapă)."
+        },
+        {
+          "name": "Kokorec Izmir",
+          "weight": "200 g",
+          "price": 45,
+          "description": "Intestine de miel curățate minuțios și înfășurate pe rotisor, fripte pe jar, tăiate la satâr în bucăți mari și condimentate cu chimion și ardei iute. Se servește fierbinte, în jumătate de pâine crocantă, alături de ardei iuți murați."
+        },
+        {
+          "name": "Legume cu Grătar",
+          "weight": "300 g",
+          "price": 50,
+          "description": "Legume proaspete de sezon (vânătă, dovlecel, ardei gras, roșii coapte, ceapă) fripte pe jar, stropite cu ulei de măsline și condimente aromatice."
+        }
+      ]
+    },
+    {
+      "id": "meniu-weekend",
+      "name": "Meniu de Weekend",
+      "items": [
+        {
+          "name": "Rasol de Berbecuț",
+          "weight": "450 g",
+          "price": 70,
+          "description": "Rasol fraged de berbecuț cu os, gătit lent la cuptor timp de câteva ore în suc propriu cu ierburi aromatice, până când carnea devine foarte moale și se desprinde de pe os. Se servește pe un pat de orez pilaf."
+        },
+        {
+          "name": "Çoban Kavurma",
+          "weight": "450 g",
+          "price": 80,
+          "description": "Bucățele fragede de carne de vită și berbecuț, trase la tigaie cu ceapă, roșii, ardei și condimente tradiționale."
+        },
+        {
+          "name": "Specialitatea Aslan",
+          "weight": "450 g",
+          "price": 80,
+          "description": "Mușchiuleț de vită premium (bonfile) rulat cu carne tocată în stil Adana și grăsime de oaie (kuyruk yağı), fript pe jar."
+        },
+        {
+          "name": "Cotlet de Berbecuț",
+          "weight": "450 g",
+          "price": 110,
+          "description": "Cotlete fragede de berbecuț fripte pe jar și servite cu bulgur, orez, ceapă cu sumac, varză roșie, roșii coapte, ardei iute copt și cartof prăjit."
+        }
+      ]
+    },
+    {
+      "id": "pide-lahmacun",
+      "name": "Pide & Lahmacun",
+      "items": [
+        {
+          "name": "Pide cu Cașcaval",
+          "weight": "300 g",
+          "price": 45,
+          "description": "Aluat tradițional în formă de barcă, umplut din belșug cu cașcaval topit."
+        },
+        {
+          "name": "Pide cu Cașcaval și Gudem",
+          "weight": "300 g",
+          "price": 48,
+          "description": "Aluat în formă rotundă cu cașcaval și ghiudem."
+        },
+        {
+          "name": "Pide cu Pui și Cașcaval",
+          "weight": "350 g",
+          "price": 48,
+          "description": "Aluat în formă rotundă cu carne de pui, roșii, ardei roșu și verde, boia dulce, sare."
+        },
+        {
+          "name": "Pide cu Vită",
+          "weight": "300 g",
+          "price": 50,
+          "description": "Aluat în formă rotundă cu carne de vită, roșii, ardei roșu și verde, boia dulce, sare."
+        },
+        {
+          "name": "Pide cu Vită și Cașcaval",
+          "weight": "350 g",
+          "price": 55,
+          "description": "Aluat în formă rotundă cu carne de vită, roșii, ardei roșu și verde, cașcaval, boia dulce, sare."
+        },
+        {
+          "name": "Pide Mixt",
+          "weight": "350 g",
+          "price": 58,
+          "description": "Aluat în formă rotundă cu carne de vită, ghiudem, cașcaval, ardei roșu și verde, boia dulce, sare."
+        },
+        {
+          "name": "Lahmacun",
+          "weight": "150 g",
+          "price": 25,
+          "description": "Pizza turcească din aluat cu carne de vită și oaie, roșii, ceapă, pastă de ardei, ardei roșu și verde, piper, pătrunjel, sare."
+        },
+        {
+          "name": "Lahmacun cu Cașcaval",
+          "weight": "200 g",
+          "price": 30,
+          "description": "Pizza turcească din aluat cu carne de vită și oaie, roșii, ceapă, pastă de ardei, ardei roșu și verde, piper, pătrunjel, sare, cașcaval."
+        },
+        {
+          "name": "Fındık Lahmacun",
+          "weight": "100 g",
+          "price": 15,
+          "description": "Pizza turcească din aluat cu carne de vită și oaie, roșii, ceapă, pastă de ardei, ardei roșu și verde, piper, pătrunjel, sare."
+        },
+        {
+          "name": "Pita Mare",
+          "weight": "150 g",
+          "price": 15,
+          "description": "Pizza turcească din aluat cu carne de vită și oaie, roșii, ceapă, pastă de ardei, ardei roșu și verde, piper, pătrunjel, sare."
+        },
+        {
+          "name": "Lavaş",
+          "weight": "100 g",
+          "price": 4,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "desert",
+      "name": "Desert",
+      "items": [
+        {
+          "name": "Künefe",
+          "weight": "150 g",
+          "price": 30,
+          "description": "Fidea, brânză, unt, fistic și sirop de zahăr."
+        },
+        {
+          "name": "Foietaj cu Lapte / Güllaç",
+          "weight": "200 g",
+          "price": 25,
+          "description": "Desert otoman cu foietaj din orez cu lapte, amidon, zahăr, ouă, sirop de trandafir, fistic și rodii."
+        },
+        {
+          "name": "Baklava cu Lapte",
+          "weight": "150 g",
+          "price": 30,
+          "description": "Baklava cu fistic, lapte și ciocolată."
+        },
+        {
+          "name": "Tralice cu Vișine",
+          "weight": "250 g",
+          "price": 30,
+          "description": "Făină, unt, zahăr, ouă, zahăr vanilat, cremă de vișine."
+        },
+        {
+          "name": "Orez cu Lapte",
+          "weight": "250 g",
+          "price": 25,
+          "description": "Orez, lapte, zahăr vanilat, zahăr, amidon."
+        },
+        {
+          "name": "Tralice cu Caramel",
+          "weight": "250 g",
+          "price": 30,
+          "description": "Făină, unt, zahăr, ouă, zahăr vanilat, cremă de caramel."
+        },
+        {
+          "name": "Katmer",
+          "weight": "150 g",
+          "price": 30,
+          "description": "Aluat filo de katmer, fistic, cremă de lapte, zahăr, unt, griș."
+        },
+        {
+          "name": "Cremă de Zahăr Ars",
+          "weight": "150 g",
+          "price": 25,
+          "description": "Lapte, ouă, zahăr vanilat, zahăr, unt, amidon."
+        },
+        {
+          "name": "Baklava",
+          "weight": "130 g",
+          "price": 25,
+          "description": "Baklava cu fistic."
+        }
+      ]
+    },
+    {
+      "id": "bauturi",
+      "name": "Băuturi",
+      "subcategories": [
+        {
+          "id": "bauturi-reci",
+          "name": "Soğuk İçecekler",
+          "items": [
+            {
+              "name": "Apă plată Bucovina",
+              "weight": "0.33 L",
+              "price": 10,
+              "description": ""
+            },
+            {
+              "name": "Apă minerală Bucovina",
+              "weight": "0.33 L",
+              "price": 10,
+              "description": ""
+            },
+            {
+              "name": "Pepsi",
+              "weight": "0.25 L",
+              "price": 13,
+              "description": ""
+            },
+            {
+              "name": "Pepsi Max",
+              "weight": "0.25 L",
+              "price": 13,
+              "description": ""
+            },
+            {
+              "name": "Mirinda",
+              "weight": "0.25 L",
+              "price": 13,
+              "description": ""
+            },
+            {
+              "name": "7UP",
+              "weight": "0.25 L",
+              "price": 13,
+              "description": ""
+            },
+            {
+              "name": "Lipton Ice Tea",
+              "weight": "0.25 L",
+              "price": 13,
+              "description": ""
+            },
+            {
+              "name": "Ayran",
+              "weight": "0.25 L",
+              "price": 13,
+              "description": ""
+            },
+            {
+              "name": "Fresh de Rodii",
+              "weight": "",
+              "price": 25,
+              "description": ""
+            },
+            {
+              "name": "Limonadă Fresh",
+              "weight": "",
+              "price": 20,
+              "description": ""
+            },
+            {
+              "name": "Efes Draft",
+              "weight": "0.5 L",
+              "price": 20,
+              "description": ""
+            }
+          ]
+        },
+        {
+          "id": "kids-cocktails",
+          "name": "Kids Cocktails — Alkolsüz",
+          "items": [
+            {
+              "name": "Tropical Kids",
+              "weight": "",
+              "price": 20,
+              "description": "Ananas + Portocală + Mango"
+            },
+            {
+              "name": "Sunset Kids",
+              "weight": "",
+              "price": 20,
+              "description": "Portocală + Piersică + Ananas"
+            },
+            {
+              "name": "Strawberry Apple",
+              "weight": "",
+              "price": 20,
+              "description": "Măr + Căpșuni + Portocală"
+            },
+            {
+              "name": "Apple Tropical",
+              "weight": "",
+              "price": 20,
+              "description": "Măr + Ananas + Piersică"
+            }
+          ]
+        },
+        {
+          "id": "kahve-cay",
+          "name": "Kahve & Çay",
+          "items": [
+            {
+              "name": "Cafea Turcească",
+              "weight": "",
+              "price": 15,
+              "description": ""
+            },
+            {
+              "name": "Espresso",
+              "weight": "",
+              "price": 12,
+              "description": ""
+            },
+            {
+              "name": "Espresso Lung",
+              "weight": "",
+              "price": 15,
+              "description": ""
+            },
+            {
+              "name": "Latte",
+              "weight": "",
+              "price": 15,
+              "description": ""
+            },
+            {
+              "name": "Ceai",
+              "weight": "",
+              "price": 5,
+              "description": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

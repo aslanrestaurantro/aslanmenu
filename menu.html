@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Aslan Restaurant — Menu</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #0b0b0b;
+      color: #f4efe6;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(11, 11, 11, 0.96);
+      border-bottom: 1px solid rgba(198, 164, 92, 0.25);
+      backdrop-filter: blur(10px);
+    }
+
+    .topbar-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    .brand {
+      color: #d5b46a;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 3px;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: 14px;
+    }
+
+    .nav-actions a {
+      color: #ddd4c5;
+    }
+
+    .nav-actions a:hover {
+      color: #d5b46a;
+    }
+
+    .hero {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 75px 20px 50px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: #d5b46a;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(48px, 10vw, 86px);
+      font-weight: 400;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 0 auto;
+      color: #aaa39a;
+      font-size: 17px;
+    }
+
+    .menu-tools {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px 45px;
+    }
+
+    .search {
+      width: 100%;
+      background: #121212;
+      border: 1px solid #292929;
+      color: #fff;
+      padding: 16px 18px;
+      border-radius: 4px;
+      outline: none;
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    .search:focus {
+      border-color: #d5b46a;
+    }
+
+    .categories {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 8px;
+      scrollbar-width: thin;
+    }
+
+    .cat {
+      flex: 0 0 auto;
+      border: 1px solid #363636;
+      background: #111;
+      color: #bdb5a8;
+      padding: 10px 16px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 13px;
+      transition: 0.2s;
+    }
+
+    .cat:hover,
+    .cat.active {
+      background: #d5b46a;
+      border-color: #d5b46a;
+      color: #0b0b0b;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px 80px;
+    }
+
+    .category {
+      margin-bottom: 65px;
+    }
+
+    .category h2 {
+      color: #d5b46a;
+      font-family: Georgia, serif;
+      font-size: 36px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+
+    .gold-line {
+      width: 55px;
+      height: 2px;
+      background: #d5b46a;
+      margin-bottom: 25px;
+    }
+
+    .items {
+      display: grid;
+      gap: 1px;
+      background: #292929;
+      border: 1px solid #292929;
+    }
+
+    .item {
+      background: #101010;
+      padding: 22px;
+    }
+
+    .item:hover {
+      background: #151515;
+    }
+
+    .item-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .item h3 {
+      font-family: Georgia, serif;
+      font-size: 20px;
+      font-weight: 400;
+      color: #f3eee6;
+    }
+
+    .weight {
+      color: #777;
+      font-size: 12px;
+      margin-top: 3px;
+    }
+
+    .price {
+      color: #d5b46a;
+      font-weight: 700;
+      white-space: nowrap;
+      font-size: 16px;
+    }
+
+    .description {
+      color: #99938a;
+      font-size: 14px;
+      margin-top: 9px;
+      max-width: 800px;
+    }
+
+    .subcategory {
+      margin-top: 35px;
+    }
+
+    .subcategory h3 {
+      color: #d5b46a;
+      font-family: Georgia, serif;
+      font-size: 27px;
+      font-weight: 400;
+      margin-bottom: 15px;
+    }
+
+    .empty {
+      text-align: center;
+      color: #888;
+      padding: 60px 20px;
+      border: 1px solid #292929;
+    }
+
+    footer {
+      border-top: 1px solid #292929;
+      text-align: center;
+      padding: 35px 20px;
+      color: #777;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      .topbar-inner {
+        padding: 15px;
+      }
+
+      .brand {
+        font-size: 15px;
+        letter-spacing: 2px;
+      }
+
+      .nav-actions {
+        gap: 10px;
+        font-size: 12px;
+      }
+
+      .hero {
+        padding: 55px 18px 40px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      main,
+      .menu-tools {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .category h2 {
+        font-size: 30px;
+      }
+
+      .item {
+        padding: 18px;
+      }
+
+      .item-top {
+        gap: 10px;
+      }
+
+      .item h3 {
+        font-size: 18px;
+      }
+
+      .price {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+
+      <a href="./index.html" class="brand">
+        ASLAN RESTAURANT
+      </a>
+
+      <nav class="nav-actions">
+        <a href="./index.html" id="back-link">← Înapoi</a>
+        <a href="#" id="language-toggle">RO / EN</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <section class="hero">
+
+    <div class="eyebrow">
+      Aslan Restaurant
+    </div>
+
+    <h1 id="menu-title">
+      Meniu
+    </h1>
+
+    <p id="menu-subtitle">
+      Bucătărie turcească autentică, pregătită cu tradiție și servită cu ospitalitate modernă.
+    </p>
+
+  </section>
+
+  <section class="menu-tools">
+
+    <input
+      type="search"
+      id="menu-search"
+      class="search"
+      placeholder="Caută în meniu..."
+    >
+
+    <div
+      id="category-tabs"
+      class="categories"
+    ></div>
+
+  </section>
+
+  <main id="menu-container"></main>
+
+  <footer>
+    © 2026 Aslan Restaurant
+  </footer>
+
+
+  <script>
+
+    document.addEventListener("DOMContentLoaded", async () => {
+
+      let language =
+        localStorage.getItem("aslanLanguage") || "ro";
+
+      const ui = {
+
+        ro: {
+          title: "Meniu",
+          subtitle:
+            "Bucătărie turcească autentică, pregătită cu tradiție și servită cu ospitalitate modernă.",
+          back: "← Înapoi",
+          search: "Caută în meniu...",
+          empty: "Nu au fost găsite preparate."
+        },
+
+        en: {
+          title: "Menu",
+          subtitle:
+            "Authentic Turkish cuisine, prepared with tradition and served with modern hospitality.",
+          back: "← Back",
+          search: "Search menu...",
+          empty: "No dishes found."
+        }
+
+      };
+
+
+      const $ = selector =>
+        document.querySelector(selector);
+
+
+      const title = $("#menu-title");
+      const subtitle = $("#menu-subtitle");
+      const back = $("#back-link");
+      const search = $("#menu-search");
+      const tabs = $("#category-tabs");
+      const container = $("#menu-container");
+      const toggle = $("#language-toggle");
+
+
+      let data = null;
+      let activeCategory = "all";
+
+
+      function esc(value) {
+
+        return String(value ?? "")
+          .replace(/[&<>"']/g, character => ({
+
+            "&": "&amp;",
+            "<": "&lt;",
+            ">": "&gt;",
+            '"': "&quot;",
+            "'": "&#039;"
+
+          }[character]));
+
+      }
+
+
+      function applyUI() {
+
+        document.documentElement.lang = language;
+
+        title.textContent =
+          ui[language].title;
+
+        subtitle.textContent =
+          ui[language].subtitle;
+
+        back.textContent =
+          ui[language].back;
+
+        search.placeholder =
+          ui[language].search;
+
+        toggle.textContent =
+          language === "ro"
+            ? "RO / EN"
+            : "EN / RO";
+
+      }
+
+
+      function itemMatches(item, query) {
+
+        const text = `
+          ${item.name || ""}
+          ${item.description || ""}
+        `.toLowerCase();
+
+        return !query || text.includes(query);
+
+      }
+
+
+      function renderItems(items) {
+
+        return items.map(item => `
+
+          <article class="item">
+
+            <div class="item-top">
+
+              <div>
+
+                <h3>
+                  ${esc(item.name)}
+                </h3>
+
+                ${
+                  item.weight
+                    ? `<div class="weight">
+                        ${esc(item.weight)}
+                       </div>`
+                    : ""
+                }
+
+              </div>
+
+              <div class="price">
+                ${esc(item.price)} Lei
+              </div>
+
+            </div>
+
+            ${
+              item.description
+                ? `<p class="description">
+                    ${esc(item.description)}
+                   </p>`
+                : ""
+            }
+
+          </article>
+
+        `).join("");
+
+      }
+
+
+      function render() {
+
+        if (!data) return;
+
+
+        const query =
+          search.value.trim().toLowerCase();
+
+
+        tabs.innerHTML = "";
+
+
+        const allButton =
+          document.createElement("button");
+
+        allButton.className =
+          "cat" +
+          (activeCategory === "all"
+            ? " active"
+            : "");
+
+        allButton.textContent =
+          language === "ro"
+            ? "Toate"
+            : "All";
+
+
+        allButton.onclick = () => {
+
+          activeCategory = "all";
+
+          render();
+
+        };
+
+
+        tabs.appendChild(allButton);
+
+
+        data.categories.forEach(category => {
+
+          const button =
+            document.createElement("button");
+
+          button.className =
+            "cat" +
+            (
+              activeCategory === category.id
+                ? " active"
+                : ""
+            );
+
+          button.textContent =
+            category.name;
+
+
+          button.onclick = () => {
+
+            activeCategory =
+              category.id;
+
+            render();
+
+          };
+
+
+          tabs.appendChild(button);
+
+        });
+
+
+        container.innerHTML = "";
+
+
+        let found = 0;
+
+
+        data.categories.forEach(category => {
+
+          if (
+            activeCategory !== "all" &&
+            activeCategory !== category.id
+          ) {
+            return;
+          }
+
+
+          const section =
+            document.createElement("section");
+
+          section.className =
+            "category";
+
+          section.id =
+            category.id;
+
+
+          let html = `
+            <h2>${esc(category.name)}</h2>
+            <div class="gold-line"></div>
+          `;
+
+
+          let hasContent = false;
+
+
+          /*
+            Normal categories:
+            category.items
+          */
+
+          if (Array.isArray(category.items)) {
+
+            const items =
+              category.items.filter(item =>
+                itemMatches(item, query)
+              );
+
+
+            if (items.length) {
+
+              found += items.length;
+
+              hasContent = true;
+
+              html += `
+                <div class="items">
+                  ${renderItems(items)}
+                </div>
+              `;
+
+            }
+
+          }
+
+
+          /*
+            Categories with subcategories:
+            category.subcategories
+          */
+
+          if (
+            Array.isArray(category.subcategories)
+          ) {
+
+            category.subcategories.forEach(
+              subcategory => {
+
+                const items =
+                  Array.isArray(subcategory.items)
+                    ? subcategory.items.filter(item =>
+                        itemMatches(item, query)
+                      )
+                    : [];
+
+
+                if (!items.length) return;
+
+
+                found += items.length;
+
+                hasContent = true;
+
+
+                html += `
+
+                  <div class="subcategory">
+
+                    <h3>
+                      ${esc(subcategory.name)}
+                    </h3>
+
+                    <div class="items">
+                      ${renderItems(items)}
+                    </div>
+
+                  </div>
+
+                `;
+
+              }
+            );
+
+          }
+
+
+          if (hasContent) {
+
+            section.innerHTML =
+              html;
+
+            container.appendChild(section);
+
+          }
+
+        });
+
+
+        if (!found) {
+
+          container.innerHTML = `
+
+            <div class="empty">
+              ${ui[language].empty}
+            </div>
+
+          `;
+
+        }
+
+      }
+
+
+      async function load() {
+
+        try {
+
+          const response =
+            await fetch(
+              `./js/data/menu-${language}.json`
+            );
+
+
+          if (!response.ok) {
+
+            throw new Error(
+              "Menu file could not be loaded."
+            );
+
+          }
+
+
+          data =
+            await response.json();
+
+
+          activeCategory = "all";
+
+
+          applyUI();
+
+          render();
+
+
+        } catch (error) {
+
+          console.error(error);
+
+
+          container.innerHTML = `
+
+            <div class="empty">
+              Menu could not be loaded.
+            </div>
+
+          `;
+
+        }
+
+      }
+
+
+      search.addEventListener(
+        "input",
+        render
+      );
+
+
+      toggle.addEventListener(
+        "click",
+        event => {
+
+          event.preventDefault();
+
+
+          language =
+            language === "ro"
+              ? "en"
+              : "ro";
+
+
+          localStorage.setItem(
+            "aslanLanguage",
+            language
+          );
+
+
+          load();
+
+        }
+      );
+
+
+      await load();
+
+    });
+
+  </script>
+
+</body>
+</html>

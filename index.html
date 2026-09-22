@@ -1,36 +1,525 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Aslan Restaurant | Authentic Turkish Cuisine</title>
+  <title>Aslan Restaurant | Authentic Turkish Cuisine</title>
 
-    <meta
-        name="description"
-        content="Aslan Restaurant — Popești-Leordeni, Ilfov. Authentic Turkish Cuisine."
-    >
+  <meta name="description"
+        content="Aslan Restaurant – autentică bucătărie turcească în Popești-Leordeni, Ilfov. Descoperă meniul nostru și atmosfera restaurantului.">
 
-    <meta name="theme-color" content="#0B0A08">
+  <meta name="theme-color" content="#0B0A08">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #0B0A08;
+      color: #F4F0E6;
+      font-family: "Manrope", sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(11, 10, 8, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(201, 162, 39, 0.18);
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .logo {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      color: #C9A227;
+      white-space: nowrap;
+    }
+
+    .logo span {
+      display: block;
+      font-family: "Manrope", sans-serif;
+      font-size: 8px;
+      letter-spacing: 5px;
+      text-align: center;
+      color: #F4F0E6;
+      margin-top: -5px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+      font-size: 13px;
+    }
+
+    .nav-links a:hover {
+      color: #E4C35A;
+    }
+
+    .lang {
+      border: 1px solid #C9A227;
+      padding: 7px 11px;
+      border-radius: 8px;
+      color: #E4C35A;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 130px 25px 80px;
+      position: relative;
+      overflow: hidden;
+      background:
+  url("./images/aslan-dis-cephe.png") center bottom / cover no-repeat;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(11,10,8,.45),
+          rgba(11,10,8,.25),
+          rgba(11,10,8,.45)
+        );
+        pointer-events: none;
+    }
+
+      position: relative;
+      max-width: 850px;
+    }
+
+    .eyebrow {
+      color: #C9A227;
+      letter-spacing: 5px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(60px, 10vw, 110px);
+      line-height: .85;
+      letter-spacing: 5px;
+      color: #F4F0E6;
+      text-shadow: 0 4px 18px rgba(0,0,0,.9);
+      margin-bottom: 28px;
+    }
+
+    .hero-subtitle {
+      font-size: 14px;
+      letter-spacing: 4px;
+      color: #F4F0E6;
+      text-shadow: 0 2px 8px rgba(0,0,0,.9);
+      margin-bottom: 18px;
+    }
+
+    .hero-text {
+      max-width: 600px;
+      margin: auto;
+      color: #F4F0E6;
+      font-size: 15px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 35px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 25px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 13px;
+      transition: .25s ease;
+    }
+
+    .btn-primary {
+      background: #C9A227;
+      color: #0B0A08;
+    }
+
+    .btn-primary:hover {
+      background: #E4C35A;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      border: 1px solid #C9A227;
+      color: #E4C35A;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(201,162,39,.1);
+    }
+
+    .section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 100px 24px;
+    }
+
+    .section-heading {
+      text-align: flex-start;
+      margin-bottom: 55px;
+    }
+
+    .section-heading small {
+      color: #C9A227;
+      letter-spacing: 4px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .section-heading h2 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 52px;
+      margin-top: 8px;
+    }
+
+    .gold-line {
+      width: 55px;
+      height: 2px;
+      background: #C9A227;
+      margin: 18px auto;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #14120F;
+      border: 1px solid rgba(201,162,39,.18);
+      border-radius: 16px;
+      padding: 32px 25px;
+      text-align: center;
+      transition: .25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(201,162,39,.55);
+    }
+
+    .card-number {
+      color: #C9A227;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 35px;
+    }
+
+    .card h3 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 29px;
+      margin: 8px 0;
+    }
+
+    .card p {
+      color: #A9A399;
+      font-size: 13px;
+    }
+
+    .about {
+      background: #14120F;
+      border-top: 1px solid rgba(201,162,39,.12);
+      border-bottom: 1px solid rgba(201,162,39,.12);
+    }
+
+    .about-content {
+      max-width: 750px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about-content p {
+      color: #A9A399;
+      font-size: 15px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .contact-box {
+      border: 1px solid rgba(201,162,39,.18);
+      border-radius: 16px;
+      padding: 25px;
+      text-align: center;
+    }
+
+    .contact-box strong {
+      display: block;
+      color: #C9A227;
+      margin-bottom: 8px;
+    }
+
+    .contact-box p {
+      color: #A9A399;
+      font-size: 13px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 45px 20px;
+      border-top: 1px solid rgba(201,162,39,.15);
+      color: #A9A399;
+      font-size: 12px;
+    }
+
+    footer strong {
+      color: #C9A227;
+    }
+
+    @media (max-width: 750px) {
+      .nav-links a:not(.lang) {
+        display: none;
+      }
+
+      .nav {
+        padding: 15px 18px;
+      }
+
+      .logo {
+        font-size: 25px;
+      }
+
+      .cards,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section {
+        padding: 75px 18px;
+      }
+
+      .section-heading h2 {
+        font-size: 43px;
+      }
+
+      h1 {
+        font-size: 64px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>ASLAN RESTAURANT</h1>
-        <p>AUTHENTIC TURKISH CUISINE</p>
-    </header>
+  <header class="topbar">
+    <nav class="nav">
+      <a href="#" class="logo">
+        ASLAN
+        <span>RESTAURANT</span>
+      </a>
 
-    <main>
-        <section>
-            <h2>Yakında</h2>
-            <p>Aslan Restaurant'ın yeni web sitesi hazırlanıyor.</p>
-        </section>
-    </main>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#" class="lang" id="language-toggle">RO / EN</a>
+      </div>
+    </nav>
+  </header>
 
-    <footer>
-        <p>© Aslan Restaurant</p>
-    </footer>
+  <main>
 
+    <section class="hero" id="home">
+      <div class="hero-content">
+
+        <div class="eyebrow">POPEȘTI-LEORDENI · ILFOV</div>
+
+      <h1>ASLAN</h1>
+
+        <div class="hero-subtitle">
+          AUTHENTIC TURKISH CUISINE
+        </div>
+
+        <p class="hero-text">
+          A warm dining experience inspired by authentic Turkish flavours,
+          tradition and modern hospitality.
+        </p>
+
+        <div class="buttons">
+          <a href="menu.html" class="btn btn-primary">
+            EXPLORE MENU
+          </a>
+
+          <a href="#contact" class="btn btn-secondary">
+            FIND US
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" id="menu">
+
+      <div class="section-heading">
+        <small>OUR MENU</small>
+        <h2>Turkish Flavours</h2>
+        <div class="gold-line"></div>
+      </div>
+
+      <div class="cards">
+
+        <div class="card">
+          <div class="card-number">01</div>
+          <h3>Breakfast</h3>
+          <p>
+            Traditional Turkish breakfast and morning favourites.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-number">02</div>
+          <h3>Grills</h3>
+          <p>
+            Authentic Turkish grill selections prepared with care.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-number">03</div>
+          <h3>Specialities</h3>
+          <p>
+            Chef selections and traditional Turkish dishes.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="buttons">
+        <a href="menu.html" class="btn btn-primary">
+          VIEW FULL MENU
+        </a>
+      </div>
+
+    </section>
+
+    <section class="about" id="about">
+
+      <div class="section about-content">
+
+        <div class="section-heading">
+          <small>ASLAN RESTAURANT</small>
+          <h2>Modern Heritage</h2>
+          <div class="gold-line"></div>
+        </div>
+
+        <p>
+          Aslan Restaurant brings the warmth and character of Turkish
+          cuisine to Popești-Leordeni, combining authentic flavours with
+          a modern and welcoming atmosphere.
+        </p>
+
+      </div>
+
+    </section>
+
+    <section class="section" id="contact">
+
+      <div class="section-heading">
+        <small>VISIT US</small>
+        <h2>Contact</h2>
+        <div class="gold-line"></div>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-box">
+          <strong>ADDRESS</strong>
+          <p>
+            Drumul Fermei 111 Bis<br>
+            Popești-Leordeni, Ilfov
+          </p>
+        </div>
+
+        <div class="contact-box">
+          <strong>PHONE</strong>
+          <p>+40 727 531 094</p>
+        </div>
+
+        <div class="contact-box">
+          <strong>OPEN DAILY</strong>
+          <p>09:00 – 23:00</p>
+        </div>
+
+      </div>
+
+      <div class="buttons">
+        <a
+          href="https://maps.app.goo.gl/6EpHpYF1RAZifvYQA"
+          target="_blank"
+          class="btn btn-primary"
+        >
+          GOOGLE MAPS
+        </a>
+
+        <a
+          href="https://wa.me/40727531094"
+          target="_blank"
+          class="btn btn-secondary"
+        >
+          WHATSAPP
+        </a>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <strong>ASLAN RESTAURANT</strong><br>
+    Authentic Turkish Cuisine · Popești-Leordeni
+  </footer>
+<script src="./js/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,721 @@
+{
+  "language": "en",
+  "restaurant": "Aslan Restaurant",
+  "currency": "Lei",
+  "categories": [
+    {
+      "id": "mic-dejun",
+      "name": "Breakfast",
+      "items": [
+        {
+          "name": "Plain Omelette",
+          "weight": "250 g",
+          "price": 25,
+          "description": "3 eggs, oil, served with tomatoes and cucumbers."
+        },
+        {
+          "name": "Menemen",
+          "weight": "300 g",
+          "price": 30,
+          "description": "Pan-cooked eggs with juicy tomatoes, onion, cheese, green bell pepper and oil, seasoned with salt."
+        },
+        {
+          "name": "Menemen with Meat",
+          "weight": "350 g",
+          "price": 45,
+          "description": "Pan-cooked eggs with minced meat, onion, juicy tomatoes, green bell pepper and oil, seasoned with salt."
+        },
+        {
+          "name": "Turkish Breakfast",
+          "weight": "350 g",
+          "price": 60,
+          "description": "Breakfast platter with your choice of omelette or fried eggs, telemea cheese, cheese, butter, honey, olives, fresh tomatoes, cucumbers and green pepper."
+        }
+      ]
+    },
+    {
+      "id": "ciorbe",
+      "name": "Soups",
+      "items": [
+        {
+          "name": "Lentil Soup",
+          "weight": "350 g",
+          "price": 25,
+          "description": "Smooth red lentil soup with potato, onion, oil and spices. Served with lemon and pickled hot pepper."
+        },
+        {
+          "name": "Tripe Soup",
+          "weight": "350 g",
+          "price": 30,
+          "description": "Beef tripe soup with sour cream, egg, onion, garlic, oil and spices. Served with lemon and pickled hot pepper."
+        },
+        {
+          "name": "Beef Soup",
+          "weight": "350 g",
+          "price": 30,
+          "description": "Beef soup with carrot, potato, onion, eggplant, bell pepper, tomato paste, oil and spices. Served with lemon and pickled hot pepper."
+        },
+        {
+          "name": "Šmecheră Soup",
+          "weight": "400 g",
+          "price": 35,
+          "description": "Spicy mixed soup combining tripe soup and lamb soup, with garlic. Served with lemon and pickled hot pepper."
+        },
+        {
+          "name": "Lamb Soup",
+          "weight": "350 g",
+          "price": 30,
+          "description": "Lamb soup with bell pepper, oil and spices. Served with lemon and pickled hot pepper."
+        }
+      ]
+    },
+    {
+      "id": "aperitive-calde",
+      "name": "Hot Appetizers",
+      "items": [
+        {
+          "name": "Falafel",
+          "weight": "400 g",
+          "price": 40,
+          "description": "Crispy falafel served with bulgur, rice, French fries, sumac onion, red cabbage salad and garlic sauce."
+        },
+        {
+          "name": "Hummus with Beef",
+          "weight": "250 g",
+          "price": 35,
+          "description": "Chickpea hummus with tahini, olive oil and lemon, served warm with tender beef pieces, butter and spices."
+        },
+        {
+          "name": "Breaded Camembert",
+          "weight": "150 g",
+          "price": 25,
+          "description": "Creamy Camembert cheese coated in a crispy breadcrumb crust."
+        },
+        {
+          "name": "Onion Rings",
+          "weight": "150 g",
+          "price": 20,
+          "description": ""
+        },
+        {
+          "name": "Sigara Börek",
+          "weight": "200 g",
+          "price": 25,
+          "description": "Thin pastry sheets filled with melted cheese."
+        }
+      ]
+    },
+    {
+      "id": "garnituri-sosuri",
+      "name": "Sides & Sauces",
+      "items": [
+        {
+          "name": "Bulgur",
+          "weight": "250 g",
+          "price": 15,
+          "description": ""
+        },
+        {
+          "name": "Orez Pilav",
+          "weight": "250 g",
+          "price": 15,
+          "description": ""
+        },
+        {
+          "name": "French Fries with Cheese",
+          "weight": "250 g",
+          "price": 18,
+          "description": ""
+        },
+        {
+          "name": "French Fries",
+          "weight": "200 g",
+          "price": 15,
+          "description": ""
+        },
+        {
+          "name": "Sumac Onion",
+          "weight": "100 g",
+          "price": 10,
+          "description": ""
+        },
+        {
+          "name": "Mixed Pickles",
+          "weight": "150 g",
+          "price": 15,
+          "description": ""
+        },
+        {
+          "name": "Pickled Hot Peppers",
+          "weight": "100 g",
+          "price": 12,
+          "description": ""
+        },
+        {
+          "name": "Red Cabbage",
+          "weight": "150 g",
+          "price": 12,
+          "description": ""
+        },
+        {
+          "name": "Garlic Sauce",
+          "weight": "",
+          "price": 7,
+          "description": ""
+        },
+        {
+          "name": "Hot Sauce",
+          "weight": "",
+          "price": 7,
+          "description": ""
+        },
+        {
+          "name": "Sour Cream",
+          "weight": "",
+          "price": 7,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "salate",
+      "name": "Salads",
+      "items": [
+        {
+          "name": "Tarator",
+          "weight": "200 g",
+          "price": 25,
+          "description": "Zucchini, carrots, yogurt, mayonnaise, garlic, olive oil, dill and salt."
+        },
+        {
+          "name": "Tzatziki",
+          "weight": "200 g",
+          "price": 25,
+          "description": "Yogurt, cucumbers, garlic, dill, olive oil and salt."
+        },
+        {
+          "name": "Humus",
+          "weight": "200 g",
+          "price": 25,
+          "description": "Chickpeas, sesame paste, garlic, olive oil, cumin and salt."
+        },
+        {
+          "name": "Eggplant Salad",
+          "weight": "200 g",
+          "price": 25,
+          "description": "Eggplant, kapia pepper, parsley, garlic and olive oil."
+        },
+        {
+          "name": "Shepherd's Salad",
+          "weight": "200 g",
+          "price": 25,
+          "description": "Tomatoes, cucumbers, green peppers, red onion, parsley, olive oil, lemon and pomegranate sauce."
+        },
+        {
+          "name": "Olive Salad",
+          "weight": "200 g",
+          "price": 28,
+          "description": "Green and black olives, tomatoes, cucumbers, walnuts, pomegranate, parsley, olive oil and pomegranate sauce."
+        },
+        {
+          "name": "Cheese Salad",
+          "weight": "200 g",
+          "price": 28,
+          "description": "Tomatoes, cucumbers, red onion, olives, parsley, olive oil, oregano and telemea cheese."
+        },
+        {
+          "name": "Tabouleh",
+          "weight": "200 g",
+          "price": 25,
+          "description": "Tomatoes, kapia pepper, parsley, pomegranate, olive oil and pomegranate sauce."
+        },
+        {
+          "name": "Mutabal",
+          "weight": "200 g",
+          "price": 28,
+          "description": "Eggplant, tahini, yogurt cream, garlic, olive oil and walnuts."
+        },
+        {
+          "name": "Spicy Vegetable Spread",
+          "weight": "200 g",
+          "price": 25,
+          "description": "Tomatoes, cucumbers, peppers, parsley, olive oil, pomegranate sauce and onion."
+        },
+        {
+          "name": "Yogurt Cream",
+          "weight": "200 g",
+          "price": 25,
+          "description": ""
+        },
+        {
+          "name": "Hors d'Oeuvre Salad",
+          "weight": "500 g",
+          "price": 70,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "gratare-turcesti",
+      "name": "Turkish Grills",
+      "items": [
+        {
+          "name": "Adana Kebab / Spicy Kebab",
+          "weight": "400 g",
+          "price": 65,
+          "description": "Traditional hand-chopped kebab made from lamb and beef, mixed with salt, red chili flakes and red kapia pepper, grilled over charcoal."
+        },
+        {
+          "name": "Urfa Kebab / Plain Kebab",
+          "weight": "400 g",
+          "price": 65,
+          "description": "Traditional hand-chopped kebab made from lamb and beef, seasoned only with salt and grilled over charcoal."
+        },
+        {
+          "name": "Lamb Skewers / Cop Sis",
+          "weight": "400 g",
+          "price": 75,
+          "description": "Tender lamb pieces seasoned with salt, sweet paprika and aromatic oregano, quickly grilled on skewers over charcoal."
+        },
+        {
+          "name": "Lamb Kebab / Hashas Kebab",
+          "weight": "400 g",
+          "price": 70,
+          "description": "Traditional hand-chopped lamb kebab, seasoned only with salt and grilled over charcoal."
+        },
+        {
+          "name": "Beef Skewers / Dana Sis",
+          "weight": "400 g",
+          "price": 70,
+          "description": "Tender beef pieces seasoned with salt, sweet paprika and aromatic oregano, quickly grilled on skewers over charcoal."
+        },
+        {
+          "name": "Beyti Kebab / Garlic Kebab",
+          "weight": "400 g",
+          "price": 65,
+          "description": "Traditional hand-chopped lamb and beef kebab seasoned with garlic, fresh parsley and salt, grilled over charcoal."
+        },
+        {
+          "name": "Karisik Kebab / Mixed Grill",
+          "weight": "650 g",
+          "price": 120,
+          "description": "Mixed platter with beef skewers, chicken skewers, kebab, lamb chops and mini lahmacun."
+        },
+        {
+          "name": "Domatesli Kebab / Tomato Kebab",
+          "weight": "450 g",
+          "price": 70,
+          "description": "Traditional lamb and beef kebab arranged on skewers with large slices of juicy tomatoes and grilled over charcoal."
+        }
+      ]
+    },
+    {
+      "id": "gratare-pui",
+      "name": "Chicken Grills",
+      "items": [
+        {
+          "name": "Chicken Fillet",
+          "weight": "450 g",
+          "price": 60,
+          "description": "Chicken breast fillet marinated in a pepper paste, oil and special spices, grilled over charcoal."
+        },
+        {
+          "name": "Chicken Skewers / Tavuk Sis",
+          "weight": "450 g",
+          "price": 60,
+          "description": "Chicken skewers marinated in pepper paste, salt, oil and special spices, grilled over charcoal."
+        },
+        {
+          "name": "Grilled Chicken Thighs",
+          "weight": "450 g",
+          "price": 60,
+          "description": "Chicken upper thighs marinated in pepper paste, garlic, oil and special spices, grilled over charcoal."
+        },
+        {
+          "name": "Chicken Kebab / Tavuk Kebab",
+          "weight": "450 g",
+          "price": 60,
+          "description": "Hand-chopped chicken kebab, juicy with a touch of lamb fat, seasoned with salt and grilled over charcoal."
+        },
+        {
+          "name": "Boneless Chicken Thighs / Tavuk Biftek",
+          "weight": "450 g",
+          "price": 60,
+          "description": "Boneless chicken thighs marinated in pepper paste, oil and special spices, grilled over charcoal."
+        },
+        {
+          "name": "Chicken Wings / Kanat",
+          "weight": "450 g",
+          "price": 60,
+          "description": "Chicken wings marinated in pepper paste, oil and special spices, grilled over charcoal."
+        }
+      ]
+    },
+    {
+      "id": "specialitatea-bucatarului",
+      "name": "Chef's Specialities",
+      "items": [
+        {
+          "name": "Beef Sac Kavurma",
+          "weight": "400 g",
+          "price": 75,
+          "description": "Diced beef braised with tomatoes, onion, red and green peppers, tomato paste, oil, salt and oregano, served with rice."
+        },
+        {
+          "name": "Chicken Sac Kavurma",
+          "weight": "400 g",
+          "price": 70,
+          "description": "Diced chicken breast braised with tomatoes, onion, red and green peppers, tomato paste, oil, salt and oregano, served with rice."
+        },
+        {
+          "name": "Lamb Sac Kavurma",
+          "weight": "400 g",
+          "price": 80,
+          "description": "Diced lamb braised with tomatoes, onion, red and green peppers, tomato paste, oil, salt and oregano, served with rice."
+        },
+        {
+          "name": "Sarma Beyti",
+          "weight": "450 g",
+          "price": 75,
+          "description": "Beef and lamb kebab wrapped in Turkish flatbread with cheddar cheese, served with garlic sauce, tomatoes and French fries."
+        },
+        {
+          "name": "Ali Nazik",
+          "weight": "450 g",
+          "price": 75,
+          "description": "Turkish speciality made with beef served over roasted eggplant, yogurt, garlic and tomatoes."
+        },
+        {
+          "name": "Chicken Sarma Beyti",
+          "weight": "450 g",
+          "price": 70,
+          "description": "Chicken kebab wrapped in Turkish flatbread with cheddar cheese, served with garlic sauce, tomatoes and French fries."
+        },
+        {
+          "name": "Premium Chicken Platter with Pasta & Shepherd's Salad",
+          "weight": "450 g",
+          "price": 65,
+          "description": "Tender chicken breast pieces marinated in an aromatic spice sauce and pan-seared, served with penne pasta with butter and herbs, alongside a fresh Çoban salad (tomatoes, cucumbers, peppers and onion)."
+        },
+        {
+          "name": "Izmir Kokorec",
+          "weight": "200 g",
+          "price": 45,
+          "description": "Carefully cleaned lamb intestines wrapped around a spit, grilled over charcoal, chopped into large pieces and seasoned with cumin and chili. Served hot in half a crusty bread with pickled hot peppers."
+        },
+        {
+          "name": "Grilled Vegetables",
+          "weight": "300 g",
+          "price": 50,
+          "description": "Fresh seasonal vegetables (eggplant, zucchini, bell pepper, roasted tomatoes and onion) grilled over charcoal, finished with olive oil and aromatic spices."
+        }
+      ]
+    },
+    {
+      "id": "meniu-weekend",
+      "name": "Weekend Menu",
+      "items": [
+        {
+          "name": "Slow-Cooked Lamb Shank",
+          "weight": "450 g",
+          "price": 70,
+          "description": "Tender bone-in lamb shank slow-cooked in its own juices with aromatic herbs until very soft and falling off the bone. Served over pilaf rice."
+        },
+        {
+          "name": "Çoban Kavurma",
+          "weight": "450 g",
+          "price": 80,
+          "description": "Tender pieces of beef and lamb pan-seared with onion, tomatoes, peppers and traditional spices."
+        },
+        {
+          "name": "Aslan Special",
+          "weight": "450 g",
+          "price": 80,
+          "description": "Premium beef tenderloin (bonfile) rolled with Adana-style minced meat and lamb fat (kuyruk yağı), grilled over charcoal."
+        },
+        {
+          "name": "Lamb Chops",
+          "weight": "450 g",
+          "price": 110,
+          "description": "Tender lamb chops grilled over charcoal and served with bulgur, rice, sumac onion, red cabbage, roasted tomatoes, roasted hot pepper and French fries."
+        }
+      ]
+    },
+    {
+      "id": "pide-lahmacun",
+      "name": "Pide & Lahmacun",
+      "items": [
+        {
+          "name": "Cheese Pide",
+          "weight": "300 g",
+          "price": 45,
+          "description": "Traditional boat-shaped dough generously filled with melted cheese."
+        },
+        {
+          "name": "Cheese & Sucuk Pide",
+          "weight": "300 g",
+          "price": 48,
+          "description": "Round dough topped with cheese and sucuk."
+        },
+        {
+          "name": "Chicken & Cheese Pide",
+          "weight": "350 g",
+          "price": 48,
+          "description": "Round dough topped with chicken, tomatoes, red and green peppers, sweet paprika and salt."
+        },
+        {
+          "name": "Beef Pide",
+          "weight": "300 g",
+          "price": 50,
+          "description": "Round dough topped with beef, tomatoes, red and green peppers, sweet paprika and salt."
+        },
+        {
+          "name": "Beef & Cheese Pide",
+          "weight": "350 g",
+          "price": 55,
+          "description": "Round dough topped with beef, tomatoes, red and green peppers, cheese, sweet paprika and salt."
+        },
+        {
+          "name": "Mixed Pide",
+          "weight": "350 g",
+          "price": 58,
+          "description": "Round dough topped with beef, sucuk, cheese, red and green peppers, sweet paprika and salt."
+        },
+        {
+          "name": "Lahmacun",
+          "weight": "150 g",
+          "price": 25,
+          "description": "Turkish flatbread topped with beef and lamb, tomatoes, onion, pepper paste, red and green peppers, black pepper, parsley and salt."
+        },
+        {
+          "name": "Cheese Lahmacun",
+          "weight": "200 g",
+          "price": 30,
+          "description": "Turkish flatbread topped with beef and lamb, tomatoes, onion, pepper paste, red and green peppers, black pepper, parsley, salt and cheese."
+        },
+        {
+          "name": "Fındık Lahmacun",
+          "weight": "100 g",
+          "price": 15,
+          "description": "Turkish flatbread topped with beef and lamb, tomatoes, onion, pepper paste, red and green peppers, black pepper, parsley and salt."
+        },
+        {
+          "name": "Large Pita",
+          "weight": "150 g",
+          "price": 15,
+          "description": "Turkish flatbread topped with beef and lamb, tomatoes, onion, pepper paste, red and green peppers, black pepper, parsley and salt."
+        },
+        {
+          "name": "Lavash",
+          "weight": "100 g",
+          "price": 4,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "desert",
+      "name": "Desserts",
+      "items": [
+        {
+          "name": "Künefe",
+          "weight": "150 g",
+          "price": 30,
+          "description": "Shredded pastry, cheese, butter, pistachios and sugar syrup."
+        },
+        {
+          "name": "Milk Pastry / Güllaç",
+          "weight": "200 g",
+          "price": 25,
+          "description": "Ottoman dessert made with rice-flour pastry, milk, starch, sugar, eggs, rose syrup, pistachios and pomegranate."
+        },
+        {
+          "name": "Milk Baklava",
+          "weight": "150 g",
+          "price": 30,
+          "description": "Baklava with pistachios, milk and chocolate."
+        },
+        {
+          "name": "Sour Cherry Trilece",
+          "weight": "250 g",
+          "price": 30,
+          "description": "Flour, butter, sugar, eggs, vanilla sugar and sour cherry cream."
+        },
+        {
+          "name": "Rice Pudding",
+          "weight": "250 g",
+          "price": 25,
+          "description": "Rice, milk, vanilla sugar, sugar and starch."
+        },
+        {
+          "name": "Caramel Trilece",
+          "weight": "250 g",
+          "price": 30,
+          "description": "Flour, butter, sugar, eggs, vanilla sugar and caramel cream."
+        },
+        {
+          "name": "Katmer",
+          "weight": "150 g",
+          "price": 30,
+          "description": "Katmer filo pastry, pistachios, milk cream, sugar, butter and semolina."
+        },
+        {
+          "name": "Crème Caramel",
+          "weight": "150 g",
+          "price": 25,
+          "description": "Milk, eggs, vanilla sugar, sugar, butter and starch."
+        },
+        {
+          "name": "Baklava",
+          "weight": "130 g",
+          "price": 25,
+          "description": "Baklava with pistachios."
+        }
+      ]
+    },
+    {
+      "id": "bauturi",
+      "name": "Drinks",
+      "subcategories": [
+        {
+          "id": "bauturi-reci",
+          "name": "Cold Drinks",
+          "items": [
+            {
+              "name": "Bucovina Still Water",
+              "weight": "0.33 L",
+              "price": 10,
+              "description": ""
+            },
+            {
+              "name": "Bucovina Mineral Water",
+              "weight": "0.33 L",
+              "price": 10,
+              "description": ""
+            },
+            {
+              "name": "Pepsi",
+              "weight": "0.25 L",
+              "price": 13,
+              "description": ""
+            },
+            {
+              "name": "Pepsi Max",
+              "weight": "0.25 L",
+              "price": 13,
+              "description": ""
+            },
+            {
+              "name": "Mirinda",
+              "weight": "0.25 L",
+              "price": 13,
+              "description": ""
+            },
+            {
+              "name": "7UP",
+              "weight": "0.25 L",
+              "price": 13,
+              "description": ""
+            },
+            {
+              "name": "Lipton Ice Tea",
+              "weight": "0.25 L",
+              "price": 13,
+              "description": ""
+            },
+            {
+              "name": "Ayran",
+              "weight": "0.25 L",
+              "price": 13,
+              "description": ""
+            },
+            {
+              "name": "Fresh Pomegranate Juice",
+              "weight": "",
+              "price": 25,
+              "description": ""
+            },
+            {
+              "name": "Fresh Lemonade",
+              "weight": "",
+              "price": 20,
+              "description": ""
+            },
+            {
+              "name": "Efes Draft",
+              "weight": "0.5 L",
+              "price": 20,
+              "description": ""
+            }
+          ]
+        },
+        {
+          "id": "kids-cocktails",
+          "name": "Kids Cocktails — Non-Alcoholic",
+          "items": [
+            {
+              "name": "Tropical Kids",
+              "weight": "",
+              "price": 20,
+              "description": "Pineapple + Orange + Mango"
+            },
+            {
+              "name": "Sunset Kids",
+              "weight": "",
+              "price": 20,
+              "description": "Orange + Peach + Pineapple"
+            },
+            {
+              "name": "Strawberry Apple",
+              "weight": "",
+              "price": 20,
+              "description": "Apple + Strawberry + Orange"
+            },
+            {
+              "name": "Apple Tropical",
+              "weight": "",
+              "price": 20,
+              "description": "Apple + Pineapple + Peach"
+            }
+          ]
+        },
+        {
+          "id": "kahve-cay",
+          "name": "Coffee & Tea",
+          "items": [
+            {
+              "name": "Turkish Coffee",
+              "weight": "",
+              "price": 15,
+              "description": ""
+            },
+            {
+              "name": "Espresso",
+              "weight": "",
+              "price": 12,
+              "description": ""
+            },
+            {
+              "name": "Lungo Espresso",
+              "weight": "",
+              "price": 15,
+              "description": ""
+            },
+            {
+              "name": "Latte",
+              "weight": "",
+              "price": 15,
+              "description": ""
+            },
+            {
+              "name": "Tea",
+              "weight": "",
+              "price": 5,
+              "description": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
