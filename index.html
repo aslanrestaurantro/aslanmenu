@@ -2,6 +2,7 @@
 <html lang="ro">
 <head>
   
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -109,7 +110,14 @@
       overflow: hidden;
       background:
   radial-gradient(circle at 50% 30%, #201a10 0%, #0b0a08 55%, #050505 100%);
+    }
 
+    .hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 850px;
+  margin: auto;
+}
     .hero::before {
       content: "";
       position: absolute;
@@ -121,7 +129,7 @@
           rgba(11,10,8,.25),
           rgba(11,10,8,.45)
         );
-        pointer-events: none;
+      pointer-events: none;
     }
 
 
@@ -200,7 +208,7 @@
     }
 
     .section-heading {
-      text-align: flex-start;
+      text-align: left;
       margin-bottom: 55px;
     }
 
@@ -309,22 +317,35 @@
       color: #A9A399;
       font-size: 12px;
     }
-
     footer strong {
       color: #C9A227;
     }
 
     @media (max-width: 750px) {
-      .nav-links a:not(.lang) {
-        display: none;
-      }
-
       .nav {
         padding: 15px 18px;
+        gap: 12px;
       }
 
       .logo {
         font-size: 25px;
+      }
+
+      .nav-links {
+        gap: 12px;
+      }
+
+      .nav-links a:not(.lang):not([href="menu.html"]) {
+        display: none;
+      }
+
+      .nav-links a[href="menu.html"] {
+        display: inline-flex;
+        white-space: nowrap;
+      }
+
+      .lang {
+        white-space: nowrap;
       }
 
       .cards,
