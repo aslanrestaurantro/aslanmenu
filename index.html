@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Aslan Restaurant | Authentic Turkish Cuisine</title>
 
-  <meta name="description"
-        content="Aslan Restaurant – autentică bucătărie turcească în Popești-Leordeni, Ilfov. Descoperă meniul nostru și atmosfera restaurantului.">
+  <meta
+    name="description"
+    content="Aslan Restaurant – autentică bucătărie turcească în Popești-Leordeni, Ilfov."
+  >
 
-  <meta name="theme-color" content="#0B0A08">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#0b0a08">
 
   <style>
+    /* =========================
+       RESET
+    ========================= */
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -30,10 +29,11 @@
     }
 
     body {
-      background: #0B0A08;
-      color: #F4F0E6;
-      font-family: "Manrope", sans-serif;
+      background: #0b0a08;
+      color: #f4f0e6;
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.6;
+      overflow-x: hidden;
     }
 
     a {
@@ -41,21 +41,48 @@
       text-decoration: none;
     }
 
+    button {
+      font: inherit;
+    }
+
+
+    /* =========================
+       COLORS
+    ========================= */
+
+    :root {
+      --black: #0b0a08;
+      --black-soft: #12100d;
+      --black-card: #17140f;
+      --gold: #c9a227;
+      --gold-light: #e4c35a;
+      --ivory: #f4f0e6;
+      --muted: #aaa39a;
+      --border: rgba(201, 162, 39, 0.22);
+    }
+
+
+    /* =========================
+       HEADER
+    ========================= */
+
     .topbar {
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
-      z-index: 100;
-      background: rgba(11, 10, 8, 0.92);
+      z-index: 1000;
+      background: rgba(11, 10, 8, 0.96);
+      border-bottom: 1px solid var(--border);
       backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(201, 162, 39, 0.18);
     }
 
     .nav {
-      max-width: 1200px;
-      margin: auto;
-      padding: 18px 24px;
+      width: min(1200px, 100%);
+      min-height: 82px;
+      margin: 0 auto;
+      padding: 14px 24px;
+
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -63,228 +90,331 @@
     }
 
     .logo {
-      font-family: "Cormorant Garamond", serif;
-      font-size: 30px;
+      flex-shrink: 0;
+      color: var(--gold);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 31px;
       font-weight: 700;
-      letter-spacing: 3px;
-      color: #C9A227;
-      white-space: nowrap;
+      letter-spacing: 4px;
+      line-height: 1;
+      text-align: center;
     }
 
     .logo span {
       display: block;
-      font-family: "Manrope", sans-serif;
+      margin-top: 7px;
+
+      color: var(--ivory);
+      font-family: Arial, Helvetica, sans-serif;
       font-size: 8px;
+      font-weight: 700;
       letter-spacing: 5px;
-      text-align: center;
-      color: #F4F0E6;
-      margin-top: -5px;
     }
 
     .nav-links {
       display: flex;
-      gap: 25px;
       align-items: center;
-      font-size: 13px;
+      justify-content: flex-end;
+      gap: 25px;
+
+      font-size: 14px;
+    }
+
+    .nav-links a {
+      transition: color 0.2s ease;
     }
 
     .nav-links a:hover {
-      color: #E4C35A;
+      color: var(--gold-light);
     }
 
-    .lang {
-      border: 1px solid #C9A227;
-      padding: 7px 11px;
-      border-radius: 8px;
-      color: #E4C35A;
+    .lang-button {
+      border: 1px solid var(--gold);
+      border-radius: 7px;
+      padding: 8px 12px;
+
+      background: transparent;
+      color: var(--gold-light);
+      cursor: pointer;
+
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
     }
+
+    .lang-button:hover {
+      background: rgba(201, 162, 39, 0.12);
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
 
     .hero {
       min-height: 100vh;
+      padding: 145px 24px 90px;
+
       display: flex;
       align-items: center;
       justify-content: center;
-      text-align: center;
-      padding: 130px 25px 80px;
+
       position: relative;
       overflow: hidden;
+
+      text-align: center;
+
       background:
-  radial-gradient(circle at 50% 30%, #201a10 0%, #0b0a08 55%, #050505 100%);
+        radial-gradient(
+          circle at 50% 30%,
+          #2a2110 0%,
+          #17120b 30%,
+          #0b0a08 65%,
+          #050505 100%
+        );
     }
 
-    .hero-content {
-  position: relative;
-  z-index: 1;
-  max-width: 850px;
-  margin: auto;
-}
     .hero::before {
       content: "";
       position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(
-          90deg,
-          rgba(11,10,8,.45),
-          rgba(11,10,8,.25),
-          rgba(11,10,8,.45)
-        );
+      width: 500px;
+      height: 500px;
+      left: 50%;
+      top: 45%;
+      transform: translate(-50%, -50%);
+
+      background: radial-gradient(
+        circle,
+        rgba(201, 162, 39, 0.10) 0%,
+        rgba(201, 162, 39, 0.03) 35%,
+        transparent 70%
+      );
+
       pointer-events: none;
     }
 
-
-    .eyebrow {
-      color: #C9A227;
-      letter-spacing: 5px;
-      font-size: 12px;
-      font-weight: 700;
-      margin-bottom: 18px;
+    .hero-content {
+      width: min(850px, 100%);
+      position: relative;
+      z-index: 2;
     }
 
-    h1 {
-      font-family: "Cormorant Garamond", serif;
-      font-size: clamp(60px, 10vw, 110px);
-      line-height: .85;
+    .eyebrow {
+      margin-bottom: 22px;
+
+      color: var(--gold-light);
+      font-size: 12px;
+      font-weight: 700;
       letter-spacing: 5px;
-      color: #F4F0E6;
-      text-shadow: 0 4px 18px rgba(0,0,0,.9);
+    }
+
+    .hero h1 {
       margin-bottom: 28px;
+
+      color: var(--ivory);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(70px, 12vw, 125px);
+      font-weight: 700;
+      line-height: 0.85;
+      letter-spacing: 7px;
+
+      text-shadow: 0 6px 25px rgba(0, 0, 0, 0.7);
     }
 
     .hero-subtitle {
-      font-size: 14px;
-      letter-spacing: 4px;
-      color: #F4F0E6;
-      text-shadow: 0 2px 8px rgba(0,0,0,.9);
-      margin-bottom: 18px;
+      margin-bottom: 22px;
+
+      color: var(--ivory);
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 5px;
     }
 
     .hero-text {
-      max-width: 600px;
-      margin: auto;
-      color: #F4F0E6;
-      font-size: 15px;
+      width: min(620px, 100%);
+      margin: 0 auto;
+
+      color: #ddd7cc;
+      font-size: 16px;
+      line-height: 1.8;
     }
 
     .buttons {
+      margin-top: 38px;
+
       display: flex;
       justify-content: center;
+      align-items: center;
       gap: 14px;
-      margin-top: 35px;
       flex-wrap: wrap;
     }
 
     .btn {
-      padding: 14px 25px;
+      min-width: 190px;
+      padding: 15px 25px;
+
       border-radius: 10px;
-      font-weight: 700;
+
       font-size: 13px;
-      transition: .25s ease;
+      font-weight: 700;
+      text-align: center;
+
+      transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
     }
 
-    .btn-primary {
-      background: #C9A227;
-      color: #0B0A08;
-    }
-
-    .btn-primary:hover {
-      background: #E4C35A;
+    .btn:hover {
       transform: translateY(-2px);
     }
 
+    .btn-primary {
+      background: var(--gold);
+      color: var(--black);
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-light);
+    }
+
     .btn-secondary {
-      border: 1px solid #C9A227;
-      color: #E4C35A;
+      border: 1px solid var(--gold);
+      color: var(--gold-light);
+      background: transparent;
     }
 
     .btn-secondary:hover {
-      background: rgba(201,162,39,.1);
+      background: rgba(201, 162, 39, 0.10);
     }
 
+
+    /* =========================
+       SECTIONS
+    ========================= */
+
     .section {
-      max-width: 1200px;
-      margin: auto;
+      width: min(1180px, 100%);
+      margin: 0 auto;
       padding: 100px 24px;
     }
 
+    .section-dark {
+      background: var(--black-soft);
+    }
+
     .section-heading {
-      text-align: left;
       margin-bottom: 55px;
+      text-align: center;
     }
 
     .section-heading small {
-      color: #C9A227;
-      letter-spacing: 4px;
+      color: var(--gold);
       font-size: 11px;
       font-weight: 700;
+      letter-spacing: 4px;
     }
 
     .section-heading h2 {
-      font-family: "Cormorant Garamond", serif;
-      font-size: 52px;
       margin-top: 8px;
+
+      color: var(--ivory);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(42px, 7vw, 58px);
+      font-weight: 600;
+      line-height: 1.05;
     }
 
     .gold-line {
       width: 55px;
       height: 2px;
-      background: #C9A227;
-      margin: 18px auto;
+      margin: 20px auto 0;
+      background: var(--gold);
     }
 
-    .cards {
+
+    /* =========================
+       MENU PREVIEW
+    ========================= */
+
+    .menu-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
     }
 
-    .card {
-      background: #14120F;
-      border: 1px solid rgba(201,162,39,.18);
+    .menu-card {
+      min-height: 220px;
+      padding: 32px 26px;
+
+      border: 1px solid var(--border);
       border-radius: 16px;
-      padding: 32px 25px;
+
+      background: var(--black-card);
+
       text-align: center;
-      transition: .25s ease;
+
+      transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
     }
 
-    .card:hover {
+    .menu-card:hover {
       transform: translateY(-5px);
-      border-color: rgba(201,162,39,.55);
+      border-color: rgba(201, 162, 39, 0.55);
     }
 
-    .card-number {
-      color: #C9A227;
-      font-family: "Cormorant Garamond", serif;
-      font-size: 35px;
+    .menu-number {
+      color: var(--gold);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 34px;
     }
 
-    .card h3 {
-      font-family: "Cormorant Garamond", serif;
+    .menu-card h3 {
+      margin: 10px 0;
+
+      color: var(--ivory);
+      font-family: Georgia, "Times New Roman", serif;
       font-size: 29px;
-      margin: 8px 0;
     }
 
-    .card p {
-      color: #A9A399;
+    .menu-card p {
+      color: var(--muted);
       font-size: 13px;
+      line-height: 1.7;
     }
+
+    .menu-button {
+      margin-top: 35px;
+    }
+
+
+    /* =========================
+       ABOUT
+    ========================= */
 
     .about {
-      background: #14120F;
-      border-top: 1px solid rgba(201,162,39,.12);
-      border-bottom: 1px solid rgba(201,162,39,.12);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      background: #12100d;
     }
 
-    .about-content {
-      max-width: 750px;
-      margin: auto;
+    .about-inner {
+      width: min(760px, 100%);
+      margin: 0 auto;
       text-align: center;
     }
 
-    .about-content p {
-      color: #A9A399;
-      font-size: 15px;
+    .about-text {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.9;
     }
+
+
+    /* =========================
+       CONTACT
+    ========================= */
 
     .contact-grid {
       display: grid;
@@ -293,76 +423,168 @@
     }
 
     .contact-box {
-      border: 1px solid rgba(201,162,39,.18);
+      padding: 30px 22px;
+
+      border: 1px solid var(--border);
       border-radius: 16px;
-      padding: 25px;
+
       text-align: center;
     }
 
     .contact-box strong {
       display: block;
-      color: #C9A227;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
+
+      color: var(--gold);
+      font-size: 12px;
+      letter-spacing: 2px;
     }
 
     .contact-box p {
-      color: #A9A399;
-      font-size: 13px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.7;
     }
+
+    .contact-box a:hover {
+      color: var(--gold-light);
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #55b56a;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
 
     footer {
-      text-align: center;
       padding: 45px 20px;
-      border-top: 1px solid rgba(201,162,39,.15);
-      color: #A9A399;
+
+      border-top: 1px solid var(--border);
+
+      background: #080706;
+
+      color: var(--muted);
       font-size: 12px;
-    }
-    footer strong {
-      color: #C9A227;
+      text-align: center;
     }
 
+    footer strong {
+      color: var(--gold);
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================= */
+
     @media (max-width: 750px) {
+
       .nav {
-        padding: 15px 18px;
+        min-height: 72px;
+        padding: 12px 16px;
         gap: 12px;
       }
 
       .logo {
         font-size: 25px;
+        letter-spacing: 3px;
+      }
+
+      .logo span {
+        font-size: 7px;
+        letter-spacing: 4px;
+        margin-top: 5px;
       }
 
       .nav-links {
-        gap: 12px;
+        gap: 9px;
       }
 
-      .nav-links a:not(.lang):not([href="menu.html"]) {
+      .nav-links a:not(.menu-link) {
         display: none;
       }
 
-      .nav-links a[href="menu.html"] {
-        display: inline-flex;
-        white-space: nowrap;
+      .menu-link {
+        display: inline-block;
+        font-size: 13px;
       }
 
-      .lang {
-        white-space: nowrap;
+      .lang-button {
+        padding: 7px 9px;
+        font-size: 11px;
       }
 
-      .cards,
-      .contact-grid {
-        grid-template-columns: 1fr;
+      .hero {
+        min-height: 100svh;
+        padding: 125px 18px 70px;
+      }
+
+      .eyebrow {
+        margin-bottom: 20px;
+        font-size: 10px;
+        letter-spacing: 3px;
+      }
+
+      .hero h1 {
+        margin-bottom: 25px;
+        font-size: 68px;
+        letter-spacing: 5px;
+      }
+
+      .hero-subtitle {
+        font-size: 11px;
+        letter-spacing: 2.5px;
+        line-height: 1.7;
+      }
+
+      .hero-text {
+        font-size: 14px;
+        line-height: 1.75;
+      }
+
+      .buttons {
+        width: 100%;
+        margin-top: 30px;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .btn {
+        width: min(330px, 100%);
       }
 
       .section {
         padding: 75px 18px;
       }
 
-      .section-heading h2 {
-        font-size: 43px;
+      .section-heading {
+        margin-bottom: 40px;
       }
 
-      h1 {
-        font-size: 64px;
+      .menu-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .menu-card {
+        min-height: auto;
+        padding: 28px 22px;
+      }
+
+      .about-text {
+        font-size: 14px;
       }
     }
   </style>
@@ -370,174 +592,515 @@
 
 <body>
 
+  <!-- =========================
+       HEADER
+  ========================== -->
+
   <header class="topbar">
     <nav class="nav">
-      <a href="#" class="logo">
+
+      <a href="#home" class="logo">
         ASLAN
         <span>RESTAURANT</span>
       </a>
 
       <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a href="#" class="lang" id="language-toggle">RO / EN</a>
+
+        <a href="#home" data-ro="Acasă" data-en="Home">
+          Acasă
+        </a>
+
+        <a href="menu.html" class="menu-link">
+          <span data-ro="Meniu" data-en="Menu">Meniu</span>
+        </a>
+
+        <a href="#about" data-ro="Despre noi" data-en="About">
+          Despre noi
+        </a>
+
+        <a href="#contact" data-ro="Contact" data-en="Contact">
+          Contact
+        </a>
+
+        <button
+          type="button"
+          class="lang-button"
+          id="language-toggle"
+        >
+          EN
+        </button>
+
       </div>
     </nav>
   </header>
 
+
+  <!-- =========================
+       MAIN
+  ========================== -->
+
   <main>
 
+    <!-- HERO -->
+
     <section class="hero" id="home">
+
       <div class="hero-content">
 
-        <div class="eyebrow">POPEȘTI-LEORDENI · ILFOV</div>
-
-      <h1>ASLAN</h1>
-
-        <div class="hero-subtitle">
-          AUTHENTIC TURKISH CUISINE
+        <div class="eyebrow">
+          POPEȘTI-LEORDENI · ILFOV
         </div>
 
-        <p class="hero-text">
-          A warm dining experience inspired by authentic Turkish flavours,
-          tradition and modern hospitality.
+        <h1>ASLAN</h1>
+
+        <div
+          class="hero-subtitle"
+          data-ro="BUCĂTĂRIE TURCEASCĂ AUTENTICĂ"
+          data-en="AUTHENTIC TURKISH CUISINE"
+        >
+          BUCĂTĂRIE TURCEASCĂ AUTENTICĂ
+        </div>
+
+        <p
+          class="hero-text"
+          data-ro="O experiență culinară caldă, inspirată de aromele autentice ale Turciei, tradiție și ospitalitate modernă."
+          data-en="A warm dining experience inspired by authentic Turkish flavours, tradition and modern hospitality."
+        >
+          O experiență culinară caldă, inspirată de aromele autentice ale
+          Turciei, tradiție și ospitalitate modernă.
         </p>
 
         <div class="buttons">
-          <a href="menu.html" class="btn btn-primary">
-            EXPLORE MENU
+
+          <a
+            href="menu.html"
+            class="btn btn-primary"
+            data-ro="DESCOPERĂ MENIUL"
+            data-en="EXPLORE MENU"
+          >
+            DESCOPERĂ MENIUL
           </a>
 
-          <a href="#contact" class="btn btn-secondary">
-            FIND US
+          <a
+            href="#contact"
+            class="btn btn-secondary"
+            data-ro="UNDE NE GĂSEȘTI"
+            data-en="FIND US"
+          >
+            UNDE NE GĂSEȘTI
           </a>
+
         </div>
 
       </div>
+
     </section>
+
+
+    <!-- MENU -->
 
     <section class="section" id="menu">
 
       <div class="section-heading">
-        <small>OUR MENU</small>
-        <h2>Turkish Flavours</h2>
+
+        <small
+          data-ro="MENIUL NOSTRU"
+          data-en="OUR MENU"
+        >
+          MENIUL NOSTRU
+        </small>
+
+        <h2
+          data-ro="Arome Turcești"
+          data-en="Turkish Flavours"
+        >
+          Arome Turcești
+        </h2>
+
         <div class="gold-line"></div>
-      </div>
-
-      <div class="cards">
-
-        <div class="card">
-          <div class="card-number">01</div>
-          <h3>Breakfast</h3>
-          <p>
-            Traditional Turkish breakfast and morning favourites.
-          </p>
-        </div>
-
-        <div class="card">
-          <div class="card-number">02</div>
-          <h3>Grills</h3>
-          <p>
-            Authentic Turkish grill selections prepared with care.
-          </p>
-        </div>
-
-        <div class="card">
-          <div class="card-number">03</div>
-          <h3>Specialities</h3>
-          <p>
-            Chef selections and traditional Turkish dishes.
-          </p>
-        </div>
 
       </div>
 
-      <div class="buttons">
-        <a href="menu.html" class="btn btn-primary">
-          VIEW FULL MENU
+
+      <div class="menu-grid">
+
+        <article class="menu-card">
+
+          <div class="menu-number">01</div>
+
+          <h3
+            data-ro="Mic Dejun"
+            data-en="Breakfast"
+          >
+            Mic Dejun
+          </h3>
+
+          <p
+            data-ro="Mic dejun tradițional turcesc și preparate de dimineață."
+            data-en="Traditional Turkish breakfast and morning favourites."
+          >
+            Mic dejun tradițional turcesc și preparate de dimineață.
+          </p>
+
+        </article>
+
+
+        <article class="menu-card">
+
+          <div class="menu-number">02</div>
+
+          <h3
+            data-ro="Grătare"
+            data-en="Grills"
+          >
+            Grătare
+          </h3>
+
+          <p
+            data-ro="Selecții autentice de preparate turcești la grătar."
+            data-en="Authentic Turkish grill selections prepared with care."
+          >
+            Selecții autentice de preparate turcești la grătar.
+          </p>
+
+        </article>
+
+
+        <article class="menu-card">
+
+          <div class="menu-number">03</div>
+
+          <h3
+            data-ro="Specialități"
+            data-en="Specialities"
+          >
+            Specialități
+          </h3>
+
+          <p
+            data-ro="Selecții ale bucătarului și preparate tradiționale turcești."
+            data-en="Chef selections and traditional Turkish dishes."
+          >
+            Selecții ale bucătarului și preparate tradiționale turcești.
+          </p>
+
+        </article>
+
+      </div>
+
+
+      <div class="buttons menu-button">
+
+        <a
+          href="menu.html"
+          class="btn btn-primary"
+          data-ro="VEZI MENIUL COMPLET"
+          data-en="VIEW FULL MENU"
+        >
+          VEZI MENIUL COMPLET
         </a>
+
       </div>
 
     </section>
 
+
+    <!-- ABOUT -->
+
     <section class="about" id="about">
 
-      <div class="section about-content">
+      <div class="section about-inner">
 
         <div class="section-heading">
+
           <small>ASLAN RESTAURANT</small>
-          <h2>Modern Heritage</h2>
+
+          <h2
+            data-ro="Tradiție Modernă"
+            data-en="Modern Heritage"
+          >
+            Tradiție Modernă
+          </h2>
+
           <div class="gold-line"></div>
+
         </div>
 
-        <p>
-          Aslan Restaurant brings the warmth and character of Turkish
-          cuisine to Popești-Leordeni, combining authentic flavours with
-          a modern and welcoming atmosphere.
+        <p
+          class="about-text"
+          data-ro="Aslan Restaurant aduce căldura și caracterul bucătăriei turcești în Popești-Leordeni, combinând aromele autentice cu o atmosferă modernă și primitoare."
+          data-en="Aslan Restaurant brings the warmth and character of Turkish cuisine to Popești-Leordeni, combining authentic flavours with a modern and welcoming atmosphere."
+        >
+          Aslan Restaurant aduce căldura și caracterul bucătăriei turcești
+          în Popești-Leordeni, combinând aromele autentice cu o atmosferă
+          modernă și primitoare.
         </p>
 
       </div>
 
     </section>
 
+
+    <!-- CONTACT -->
+
     <section class="section" id="contact">
 
       <div class="section-heading">
-        <small>VISIT US</small>
-        <h2>Contact</h2>
+
+        <small
+          data-ro="VIZITEAZĂ-NE"
+          data-en="VISIT US"
+        >
+          VIZITEAZĂ-NE
+        </small>
+
+        <h2
+          data-ro="Contact"
+          data-en="Contact"
+        >
+          Contact
+        </h2>
+
         <div class="gold-line"></div>
+
       </div>
+
 
       <div class="contact-grid">
 
         <div class="contact-box">
-          <strong>ADDRESS</strong>
+
+          <strong
+            data-ro="ADRESĂ"
+            data-en="ADDRESS"
+          >
+            ADRESĂ
+          </strong>
+
           <p>
             Drumul Fermei 111 Bis<br>
             Popești-Leordeni, Ilfov
           </p>
+
         </div>
 
-        <div class="contact-box">
-          <strong>PHONE</strong>
-          <p>+40 727 531 094</p>
-        </div>
 
         <div class="contact-box">
-          <strong>OPEN DAILY</strong>
-          <p>09:00 – 23:00</p>
+
+          <strong
+            data-ro="TELEFON"
+            data-en="PHONE"
+          >
+            TELEFON
+          </strong>
+
+          <p>
+            <a href="tel:+40727531094">
+              +40 727 531 094
+            </a>
+          </p>
+
+        </div>
+
+
+        <div class="contact-box">
+
+          <strong
+            data-ro="PROGRAM"
+            data-en="OPENING HOURS"
+          >
+            PROGRAM
+          </strong>
+
+          <p>
+            <span class="status">
+              <span class="status-dot"></span>
+              <span id="opening-status">
+                Deschis
+              </span>
+            </span>
+            <br>
+            09:00 – 23:00
+          </p>
+
         </div>
 
       </div>
 
+
       <div class="buttons">
+
         <a
           href="https://maps.app.goo.gl/6EpHpYF1RAZifvYQA"
           target="_blank"
+          rel="noopener"
           class="btn btn-primary"
+          data-ro="GOOGLE MAPS"
+          data-en="GOOGLE MAPS"
         >
           GOOGLE MAPS
         </a>
 
+
         <a
           href="https://wa.me/40727531094"
           target="_blank"
+          rel="noopener"
           class="btn btn-secondary"
+          data-ro="WHATSAPP"
+          data-en="WHATSAPP"
         >
           WHATSAPP
         </a>
+
+
+        <a
+          href="mailto:aslanrestaurantro@gmail.com"
+          class="btn btn-secondary"
+          data-ro="E-MAIL"
+          data-en="EMAIL"
+        >
+          E-MAIL
+        </a>
+
       </div>
 
     </section>
 
   </main>
 
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
   <footer>
-    <strong>ASLAN RESTAURANT</strong><br>
-    Authentic Turkish Cuisine · Popești-Leordeni
+
+    <strong>ASLAN RESTAURANT</strong>
+
+    <br>
+
+    <span
+      data-ro="Bucătărie Turcească Autentică · Popești-Leordeni"
+      data-en="Authentic Turkish Cuisine · Popești-Leordeni"
+    >
+      Bucătărie Turcească Autentică · Popești-Leordeni
+    </span>
+
   </footer>
-<script src="./js/app.js"></script>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+
+  <script>
+    (function () {
+
+      const languageButton =
+        document.getElementById("language-toggle");
+
+      const translatableElements =
+        document.querySelectorAll("[data-ro][data-en]");
+
+      const openingStatus =
+        document.getElementById("opening-status");
+
+      let language = "ro";
+
+
+      function updateLanguage() {
+
+        document.documentElement.lang = language;
+
+        translatableElements.forEach(function (element) {
+
+          const text =
+            element.getAttribute("data-" + language);
+
+          if (text !== null) {
+            element.textContent = text;
+          }
+
+        });
+
+        languageButton.textContent =
+          language === "ro" ? "EN" : "RO";
+
+        updateOpeningStatus();
+      }
+
+
+      function updateOpeningStatus() {
+
+        const now = new Date();
+        const hour = now.getHours();
+
+        const isOpen =
+          hour >= 9 && hour < 23;
+
+        if (language === "ro") {
+
+          openingStatus.textContent =
+            isOpen ? "Deschis" : "Închis";
+
+        } else {
+
+          openingStatus.textContent =
+            isOpen ? "Open" : "Closed";
+
+        }
+
+        const dot =
+          document.querySelector(".status-dot");
+
+        if (dot) {
+
+          dot.style.background =
+            isOpen ? "#55b56a" : "#a44a3f";
+
+        }
+
+      }
+
+
+      languageButton.addEventListener(
+        "click",
+        function () {
+
+          language =
+            language === "ro" ? "en" : "ro";
+
+          localStorage.setItem(
+            "aslanLanguage",
+            language
+          );
+
+          updateLanguage();
+
+        }
+      );
+
+
+      const savedLanguage =
+        localStorage.getItem("aslanLanguage");
+
+      if (
+        savedLanguage === "ro" ||
+        savedLanguage === "en"
+      ) {
+        language = savedLanguage;
+      }
+
+      updateLanguage();
+
+      setInterval(
+        updateOpeningStatus,
+        60000
+      );
+
+    })();
+  </script>
+
 </body>
 </html>
